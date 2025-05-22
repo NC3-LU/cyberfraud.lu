@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@plugin '@headlessui/tailwindcss' {
+  prefix: "ui";
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+@theme {
+  --font-primary: var(--font-roboto);
+  --font-secondary: var(--font-fjalla);
+
+  --color-primary: oklch(0.6667 0.1473 237.8);
+  --color-secondary: oklch(0.577 0.2339 27.95);
+  --color-primary-light: oklch(0.9137 0.0555 225.72);
+  --color-primary-mid: oklch(0.8159 0.0913 227.4);
+  --color-primary-superlight: oklch(0.9261 0.0475 225.51);
+  --color-primary-dark: oklch(0.6667 0.1473 237.8);
+  --color-secondary-dark: oklch(0.5771 0.2337 27.61);
+  --color-secondary-mid: oklch(0.7311 0.1359 17.02);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth font-primary;
+  }
+
+  body {
+    @apply mx-auto min-h-screen w-full overflow-x-hidden;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  img {
+    @apply m-0 p-0;
+  }
+}
+
+@layer components {
+  .main-container {
+    @apply flex flex-col max-w-none;
+  }
+
+  .section {
+    @apply flex flex-col mx-auto w-full xl:max-w-[1440px] px-4 2xl:px-16;
+  }
+
+  .transparent-stripes {
+    background-image: repeating-linear-gradient(
+      -45deg /* Diagonal direction */,
+      rgba(0, 0, 0, 0.05) 0px /* Stripe color with transparency */,
+      rgba(0, 0, 0, 0.05) 10px /* End of one stripe */,
+      transparent 10px /* Start of space between stripes */,
+      transparent 20px /* End of space between stripes */
+    );
+  }
+
+  .primary-stripes {
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--color-primary-light),
+      var(--color-primary-light) 10px,
+      var(--color-primary-superlight) 10px,
+      var(--color-primary-superlight) 20px
+    );
+  }
+
+  .primary-stripes-dark {
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--color-primary-dark),
+      var(--color-primary-dark) 10px,
+      var(--color-primary-mid) 10px,
+      var(--color-primary-mid) 20px
+    );
+  }
+
+  .secondary-stripes-dark {
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--color-secondary-dark),
+      var(--color-secondary-dark) 10px,
+      var(--color-secondary-mid) 10px,
+      var(--color-secondary-mid) 20px
+    );
+  }
+}

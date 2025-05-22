@@ -7,6 +7,8 @@ services:
      #platforms:
      #   - "linux/amd64"
       dockerfile: ./docker/development/Dockerfile
-    image: ghcr.io/cybersecurityluxembourg/nc3-grc-summit-dev
+    image: ${IMAGE_NAME}
     ports:
-      - "3031:3000"
+      - "${PORT}:3000"
+    volumes:
+      - ../../_data:/app/_data
