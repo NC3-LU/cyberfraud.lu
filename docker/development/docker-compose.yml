@@ -1,0 +1,12 @@
+services:
+  with-docker-multi-env-development:
+    build:
+      context: ../../
+     # Uncomment this if you need to deploy the docker image to a particular OS (e.g. linux/amd64 for debian-like 64b systems)
+     # otherwise, the image will be created with the current machine architecture
+     #platforms:
+     #   - "linux/amd64"
+      dockerfile: ./docker/development/Dockerfile
+    image: ghcr.io/cybersecurityluxembourg/nc3-grc-summit-dev
+    ports:
+      - "3031:3000"
