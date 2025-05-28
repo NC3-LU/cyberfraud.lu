@@ -1,0 +1,7 @@
+services:
+  cyberfraud_lu_web:
+    image: ${IMAGE_NAME}
+    ports:
+      - "${PORT}:3000"
+    volumes:
+      - {DATA_FOLDER}:/app/_data

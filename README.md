@@ -78,14 +78,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 ## Docker Deployment
 To create the docker images (check `docker` folder for further info) run the following command:
 ```bash
-make build-development
+make build-build
 # or
 make build-production
 ```
 
 To run the docker stack (previously built):
 ```bash
-make start-development
+make start-build
 # or
 make start-production
 ```

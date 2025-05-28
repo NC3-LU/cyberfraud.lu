@@ -1,12 +1,12 @@
 services:
-  with-docker-multi-env-development:
+  cyberfraud_lu_web:
     build:
       context: ../../
      # Uncomment this if you need to deploy the docker image to a particular OS (e.g. linux/amd64 for debian-like 64b systems)
      # otherwise, the image will be created with the current machine architecture
-     #platforms:
-     #   - "linux/amd64"
-      dockerfile: ./docker/development/Dockerfile
+      dockerfile: /Dockerfile
+      platforms:
+        - "linux/amd64"
     image: ${IMAGE_NAME}
     ports:
       - "${PORT}:3000"
