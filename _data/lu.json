@@ -1,3 +1,283 @@
 {
-  "message": "Moien world"
+  "hero": {
+    "content": [
+      {
+        "title": "Een zweifelhaften Link?",
+        "style": "secondary"
+      },
+      {
+        "title": "Klick net!",
+        "style": "primary"
+      },
+      {
+        "title": "Check!",
+        "style": "primary"
+      },
+      {
+        "title": "Mell et!",
+        "style": "primary"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "key": "first",
+      "titles": [
+        {
+          "title": "Denkt Dir datt Dir en Affer vu Bedruch sidd?",
+          "style": "secondary"
+        },
+        {
+          "title": "Fir Är Situatioun ze bewäerten, stellt Iech dës 3 Froen:",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "style": "light",
+          "icon": "phone",
+          "iconSize": "normal",
+          "title": "Kënnt Dir ären Kontakt net zréckruffen?",
+          "body": "obwuel Dir seng Nummer virdru kannt hutt an versicht hutt unzerufen (z.B. Är Bankfilial)?"
+        },
+        {
+          "style": "light",
+          "icon": "bolt",
+          "iconSize": "normal",
+          "title": "Freet ären Kontakt Iech, séier ze handelen ?",
+          "body": "ouni déi üblech Sécherheetsmoossnamen ze beuechten?"
+        },
+        {
+          "style": "light",
+          "icon": "key",
+          "iconSize": "normal",
+          "title": "Freet hien Iech no engem Geheimcode? ",
+          "body": "ärer Bankkaartennummer? der Installatioun vun enger Bank-App?"
+        },
+        {
+          "style": "alert",
+          "icon": "siren",
+          "iconSize": "normal",
+          "title": "Hud Dir op eng vun dëse Froen « Jo » geäntwert.",
+          "body": "Siid virsiichteg !\n Et kéint sech ëm Bedruch handelen.\n"
+        }
+      ]
+    },
+    {
+      "key": "second",
+      "titles": [
+        {
+          "title": "Déi richteg Persoun fir all Situatioun!",
+          "style": "primary"
+        }
+      ],
+      "accordionItems": [
+        {
+          "icon": "bank",
+          "title": "E Problem mat Ärer Bank?",
+          "body": "Während den Ouvertureszäiten kontaktéiert den zentrale Service, äre Beroder oder är Agence.\n\nWann Dir keng direkt Nummer hutt vun ärer Agence oder vun ärem Beroder, eng Kontaktnummer fannt Dir bestemmt op offiziellen Dokumenter vun der Bank. Fannt dir dei Nummer net dann sicht an den gielen Säiten vum Online-Telefonsbuch no der offizieller Telefonsnummer vun der Bank.\n\n__Ausserhalb vun den Ouvertureszäiten: Rufft den 49-10-10 un fir de LuxTrust-Zertifikat ze spären an esou den Zougreff zu ärem Konto ze blokeiren.__"
+        },
+        {
+          "icon": "luxtrust",
+          "title": "Bedruch verbonne mat Ärem LuxTrust Kont?",
+          "body": "__LuxTrust Sperrung oder Stoppen__: Dir kënnt Ären Zertifikat mat der LuxTrust-App spären(stoppen) oder 24 550 550 uruffen (rond ëm d’Auer verfügbar).\n\n__Hud är Äntwerten zu den Sechertheetsfroen dobai dei Dir deemols benotzt hud fir ären LuxTrust-Zertifikat ze aktiveiren. Des Informatiounen brauch den Bedreiwer fir Iech ze identifizeiren.__"
+        },
+        {
+          "icon": "portal",
+          "title": "E Problem mam Portal vum Staat an ëffentlechen Déngschtleeschtungen: guichet.lu?",
+          "body": " Dir kënnt kontaktéieren:\n - Helpdesk: (+352) 247 82 000 während den Ouvertureszäiten\n - Websäit: [https://guichet.public.lu/fr/citoyens/actualites/2025/fevrier/12-govcert.html](https://guichet.public.lu/fr/citoyens/actualites/2025/fevrier/12-govcert.html)\n - Meldung vu Bedruch vum GOVCERT.LU: [https://govcert.lu/fr/signaler/](https://govcert.lu/fr/signaler/)"
+        },
+        {
+          "icon": "police",
+          "title": "Dir musst méi iwwer déi verschidden Zorte vu Bedruch wëssen?",
+          "body": "Fir dei verschidden d’Sorten vun Bedruch kenn Dir och der Police Grand-Ducale unrufen an zwar kontakteiert dei nootsten Policestatioun bei Iech, hei fann dir Nummeren: [https://police.public.lu/fr/votre-police/postes-police.html](https://police.public.lu/fr/votre-police/postes-police.html)"
+        },
+        {
+          "icon": "company",
+          "title": "Muss d'Existenz vun enger Finanzfirma iwwerpréiwt gin?",
+          "body": "Dir kennt CSSF kontakteiren:\n - Telefon: +352 2625 1 2194\n - Websäit : [https://www.cssf.lu](https://www.cssf.lu)\n - E-mail: [direction@cssf.lu](mailto:direction@cssf.lu)"
+        },
+        {
+          "icon": "shield",
+          "title": "Eng Fro iwwer Cybersécherheet?",
+          "body": "__BEE SECURE Helpline__ ass een Service fir eng anonym Berodung. All Persoun kann desen Service kontakteiren fir Froen an Berodung iwert d’Secherheet am Internet an iwert digital Medien Ausbildung.\n\nGratis an anonym Berodung per Telefon : 8002 1234 oder per Mail ([https://www.bee-secure.lu/de/](https://www.bee-secure.lu/de/))"
+        }
+      ]
+    },
+    {
+      "key": "third",
+      "titles": [
+        {
+          "title": "Schützt Iech selwer géint Cyberbedruch!",
+          "style": "secondary"
+        },
+        {
+          "title": "5 einfach Tipps dei all Dag gëllen",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Passt op zevill verspriechend Ukënnegungen un",
+          "body": "Wann eppes ze gutt kléngt fir wouer ze sinn, ass et wahrscheinlech Bedruch, suguer wann Krëschtdag ass!"
+        },
+        {
+          "title": "Deelt nie Engem är Login-Donnéeën mat",
+          "body": "Kee serieuxen Organismus freet Iech no äre Login-Donnéeën (PIN, Code, Passwuert) per E-Mail, SMS oder Telefon, iwert Sozial Netzwierk, iwert eng App."
+        },
+        {
+          "title": "Mellt verdächteg Messagen",
+          "body": "Falls Dir e komeschen Message vun enger Bank oder Institutioun kritt, mellt et!\n\n Rufft den standard vun ärer Bank, äre Beroder oder är Agence un, oder den Standard vum Organismus deen Iech den Message gescheckt huet.\n\n Fir Phishing-E-Mails benotzt SPAMBEE → spambee.lu fir et ze melden an fir aaner letzebuerger Awunner ze schützen."
+        },
+        {
+          "title": "Huelt iech Zeit ze iwerléen befir dir klickt",
+          "body": "Bedruch geschitt oft mat Drock an Angschtmache!\n\n Gitt net direkt op an huelt Iech Zäit fir ze kontrolléieren.\n\n Rufft d’Bank oder den Organismus wou Dir mengt dei hätten Iech kontakteiert direkt un an froot no op Sie Iech kontakteiert hun, amplaz op Links ze klicken! Kontrolleiert wann Dir een Zweifel hud."
+        },
+        {
+          "title": "Benotzt LuxTrust wann et geet",
+          "body": "Benotzt staark Authentifikatiounsmethoden wéi LuxTrust."
+        }
+      ]
+    },
+    {
+      "key": "fourth",
+      "titles": [
+        {
+          "title": "4 Websaïten fir méi iwwer Cyberbedruch ze léieren",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "style": "light",
+          "title": "ZOUVERLÄSSEG INFORMATIOUNEN AN KONKRET ROTSCHLEI",
+          "body": "BEE SECURE bitt zouverlässeg Informatioun a praktesch Rotschléi fir Iech selwer online ze schützen. De Site bitt eng breet Palette vun Inhalter iwwer digital Risiken, aktuell Trends a bescht Praktiken, souwéi nëtzlech Publikatiounen fir d'digital Welt besser ze verstoen.",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "bee-secure.lu",
+              "url": "https://www.bee-secure.lu/fr/risks/phishing/"
+            }
+          ]
+        },
+        {
+          "style": "light",
+          "title": "TOOLS FIR IECH ZE SCHÜTZEN",
+          "body": "D’ Luxembourg House of Cybersecurity bitt verschidde Servicer an Tools, déi Iech hëllefe kënnen aktiv selwer ze schützen, entweder andeems Dir béiswëlleg Inhalter mellt oder andeems Dir den Zougang zu Sécherheetsléisungs-Ubidder erliichtert.",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "LHC.lu",
+              "url": "https://lhc.lu"
+            },
+            {
+              "type": "link",
+              "label": "NC3.lu",
+              "url": "https://nc3.lu"
+            },
+            {
+              "type": "link",
+              "label": "CIRCL.lu",
+              "url": "https://circl.lu"
+            }
+          ]
+        },
+        {
+          "style": "light",
+          "title": "MELLT EEN CYBER BEDRUCH",
+          "body": [
+            "Spambee ass d'Instrument vun NC3, dat erlaabt Iech net méi ze leiden, andeems Dir schiedlech Inhalter mellt, a geschützt sidd vun deenen, déi scho vun anere Benotzer gemellt goufen.",
+            "Wann Dir Spambee net benotze kënnt, awer trotzdem e Phishing-Site mellen wëllt, gëtt et den URL-Abuse-Service vum CIRCL, deen Dir mat engem einfachen Browser zougräifen kennt."
+          ],
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "Spambee",
+              "url": "https://spambee.lu"
+            },
+            {
+              "type": "link",
+              "label": "CIRCL",
+              "url": "https://circl.lu/urlabuse"
+            }
+          ]
+        },
+        {
+          "style": "light",
+          "title": "DEN NATIONAL CYBERSECURITY PORTAL",
+          "body": "Cybersecurity.lu ass den Ökosystemportal, deen Iech erlaabt Déngschtleeschter z'identifizéieren, déi Iech d'Sécherheetsléisung ugepasst un äre Besoinen ubidden.",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "cybersecurity.lu",
+              "url": "https://www.cybersecurity.lu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "fifth",
+      "titles": [
+        {
+          "title": "Cyber Bedruch besser verstoen",
+          "style": "secondary"
+        },
+        {
+          "title": "Phishing, online-Bedruch…, mir soen Iech alles!",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "thief",
+          "style": "dark",
+          "title": "Wat ass Online-Bedruch?",
+          "body": "Online-Bedruch ëmfaasst all täuschend Akten, mat deenen Täter probéieren, ongerecht Virdeeler ze kréien – oft duerch Verschleierung oder falschen Identitéiten an Violatioun vun Gesetzer an Reglementer. Scam ass eng allgemeng Aart vun Bedruch."
+        },
+        {
+          "icon": "fish",
+          "style": "dark",
+          "title": "Wat ass Phishing?",
+          "body": [
+            "Phishing ass e Versuch, d'Schécken vun engem Message, normalerweis eng E-Mail, am Numm vun enger vertrauenswürdeg Drëtt Partei (Bank, Regierungsagentur, sozialen Netzwierk, Liwwerfirma, Online Händler, asw.) ze schécken fir d'Affer ze täuschen fir dass Sie hir Identitéit oder Bankdetailer, Passwierder oder souguer Bankkaartnummeren liwwert. Phishing ass e Versuch, perséinlech oder finanziell Donnéeën ze klauen, andeems een sech als seriöse Service ausgëtt.",
+            "Wärend E-Mail historesch dat meescht benotzte Kommunikatiounsmëttel war,hunn Bedrucher zënter Techniken entwéckelt déi aner Kanäl benotze kënnen: Déi meescht benotzte Methoden sinn:"
+          ],
+          "footerItems": [
+            {
+              "type": "text",
+              "title": "SMS",
+              "label": "Smishing",
+              "icon": "sms"
+            },
+            {
+              "type": "text",
+              "title": "Telefon",
+              "label": "Vishing",
+              "icon": "phone_call"
+            },
+            {
+              "type": "text",
+              "title": "QR-codes",
+              "label": "Quishing",
+              "icon": "qr_code"
+            }
+          ]
+        },
+        {
+          "icon": "shield_2",
+          "style": "dark",
+          "title": "Wat sinn déi heefegst Aarte vu Bedruch, déi vun der Police Grand-Ducale observéiert ginn?",
+          "body": "Police Grand-Ducale – Typesch Bedruchsformen. Fir eng lëscht vu bekannte Bedruchsformen, kuckt hei:",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "police.public.lu",
+              "url": "https://police.public.lu/de/prevention/arnaques.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

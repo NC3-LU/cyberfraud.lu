@@ -1,3 +1,283 @@
 {
-  "message": "Bonjour le monde dasdasdas"
+  "hero": {
+    "content": [
+      {
+        "title": "Un lien douteux ?",
+        "style": "secondary"
+      },
+      {
+        "title": "Clique Pas.",
+        "style": "primary"
+      },
+      {
+        "title": "Vérifie.",
+        "style": "primary"
+      },
+      {
+        "title": "Signale !",
+        "style": "primary"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "key": "first",
+      "titles": [
+        {
+          "title": "Vous pensez être victime d'une fraude ?",
+          "style": "secondary"
+        },
+        {
+          "title": "Pour évaluer votre situation, posez-vous ces 3 questions :",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "style": "light",
+          "icon": "phone",
+          "iconSize": "normal",
+          "title": "Vous ne parvenez pas à rappeler votre interlocuteur ?",
+          "body": "Même via un numéro que vous aviez avant son appel, comme celui de votre agence bancaire."
+        },
+        {
+          "style": "light",
+          "icon": "bolt",
+          "iconSize": "normal",
+          "title": "Votre interlocuteur vous demande-t-il d’agir rapidement ?",
+          "body": "Et sans respecter les mesures habituelles de sécurité."
+        },
+        {
+          "style": "light",
+          "icon": "key",
+          "iconSize": "normal",
+          "title": "Votre interlocuteur vous demande un code secret ? ",
+          "body": "Comme votre numéro de carte bancaire, des identifiants ou l’installation d’une application bancaire ?"
+        },
+        {
+          "style": "alert",
+          "icon": "siren",
+          "iconSize": "normal",
+          "title": "Vous avez répondu « oui » à une de ces questions ? ",
+          "body": "Soyez prudent !\nIl y a une suspicion de fraude.\n"
+        }
+      ]
+    },
+    {
+      "key": "second",
+      "titles": [
+        {
+          "title": "Le bon interlocuteur pour chaque situation !",
+          "style": "primary"
+        }
+      ],
+      "accordionItems": [
+        {
+          "icon": "bank",
+          "title": "Un problème lié à votre banque ?",
+          "body": "Si vous ne disposez pas du numéro de votre agence ou de votre conseiller, un numéro de contact devrait se trouver sur tout document officiel envoyé par la banque. Si vous n’en trouvez pas, utilisez les pages jaunes de l’annuaire en ligne pour obtenir le numéro officiel de la banque.\n\n__En dehors des heures d’ouverture : le 49-10-10 permet de bloquer le certificat Luxtrust associé à votre compte bancaire et donc l’accès au compte.__"
+        },
+        {
+          "icon": "luxtrust",
+          "title": "Une fraude liée à votre compte LuxTrust ?",
+          "body": "Pour bloquer ou suspendre votre certificat Luxtrust, vous pouvez utiliser votre application Luxtrust ou appeler le numéro suivant : 24 550 550 à toute heure du jour ou de la nuit.\n\n__Munissez-vous des réponses aux questions de sécurité que vous aviez choisies lors de l’activation de votre identifiant Luxtrust. Ces réponses seront nécessaires pour que l’opérateur soit en mesure de vous identifier.__"
+        },
+        {
+          "icon": "portal",
+          "title": "Un problème lié au portail de l’Etat et des services publics : guichet.lu ?",
+          "body": "Vous pouvez contanter: \n - Téléphone : le helpdesk aux heures d’ouverture : (+352) 247 82 000\n - Site web : [https://guichet.public.lu/fr/citoyens/actualites/2025/fevrier/12-govcert.html](https://guichet.public.lu/fr/citoyens/actualites/2025/fevrier/12-govcert.html) \n - Fiche de signalement du GOVCERT.LU : [https://govcert.lu/fr/signaler/](https://govcert.lu/fr/signaler/)"
+        },
+        {
+          "icon": "police",
+          "title": "Besoin d’en savoir plus sur les différents types de fraude ?",
+          "body": "Pour les différents types de fraude, vous pouvez contacter la Police Grand-Ducale en appelant le Commissariat proche de chez vous :\n - Carte des Commissariats avec numéros : [https://police.public.lu/fr/votre-police/postes-police.html](https://police.public.lu/fr/votre-police/postes-police.html)"
+        },
+        {
+          "icon": "company",
+          "title": "Besoin de vérifier l’existence d’une société financière ? ",
+          "body": "Vous pouvez contacter la CSSF\n - Téléphone : +352 2625 1 2194 \n - Site web : [https://www.cssf.lu](https://www.cssf.lu) \n - Email : [direction@cssf.lu](mailto:direction@cssf.lu)"
+        },
+        {
+          "icon": "shield",
+          "title": "Une question concernant la cybersécurité ? ",
+          "body": "La ligne d’assistance BEE SECURE Helpline est un service de consultation confidentielle. Toute personne peut contacter ce service pour des questions et des conseils pratiques concernant la sécurité sur Internet et l’éducation aux médias numériques. Le service est disponible par téléphone via le numéro 8002 1234 ou par [écrit](https://www.bee-secure.lu/fr/formulaire-contact-bee-secure-helpline/)"
+        }
+      ]
+    },
+    {
+      "key": "third",
+      "titles": [
+        {
+          "title": "Protégez-vous face aux cyberfraudes !",
+          "style": "secondary"
+        },
+        {
+          "title": "5 conseils simples à appliquer au quotidien",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "title": "MEFIEZ-VOUS DES ANNONCES TROP BELLES",
+          "body": "Si c’est trop beau pour être vrai, c’est probablement suspect, même le jour de Noël !"
+        },
+        {
+          "title": "NE DONNEZ JAMAIS VOS IDENTIFIANTS",
+          "body": "Aucun organisme sérieux ne vous demandera vos identifiants (nom ou numéro d’utilisateur et mot de passe, Code PIN) par email, SMS, appel téléphonique ou encore application de messagerie ou réseau social."
+        },
+        {
+          "title": "SIGNALEZ LES MESSAGES SUSPECTS",
+          "body": "Si vous recevez un message suspect de votre banque ou d’une institution officielle, vous pouvez le signaler en appelant le standard de la banque, votre agence, ou votre conseiller, ou le standard de l’institution qui aurait envoyé le message. Pour un email vous pouvez également utiliser SPAMBEE (spambee.lu) pour le signaler et contribuer à protéger les autres résidents luxembourgeois."
+        },
+        {
+          "title": "PRENEZ LE TEMPS DE REFLECHIR AVANT DE CLIQUER",
+          "body": "Les fraudeurs veulent en général créer un sentiment d’urgence, et vous faire agir dans la précipitation. Faites une pause et retrouvez votre bon sens : vous pouvez toujours composer le numéro de votre banque ou de l’organisme qui semble vous contacter, et demander s’ils sont à l’origine de ce contact. N’hésitez pas à vérifier quand vous avez un doute."
+        },
+        {
+          "title": "UTILISEZ LUXTRUST QUAND C’EST POSSIBLE",
+          "body": "Utilisez les mécanismes d’authentification forte tels que l’application mobile Luxtrust, lorsqu’ils sont disponibles."
+        }
+      ]
+    },
+    {
+      "key": "fourth",
+      "titles": [
+        {
+          "title": "4 sites pour en savoir plus sur la cyberfraude",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "style": "light",
+          "title": "DES INFORMATIONS FIABLES ET DES CONSEILS CONCRETS",
+          "body": "BEE SECURE met à disposition des informations fiables et des conseils concrets pour se protéger en ligne. Le site propose un large éventail de contenus sur les risques numériques, les tendances actuelles et les bonnes pratiques, ainsi que des publications utiles pour mieux comprendre le monde numérique.",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "bee-secure.lu",
+              "url": "https://bee-secure.lu/fr/risks/hameconnage"
+            }
+          ]
+        },
+        {
+          "style": "light",
+          "title": "DES OUTILS POUR VOUS PROTEGER",
+          "body": "La Luxembourg House of Cybersecurity offre différents services et outils qui peuvent vous permettre de vous protéger activement, soit en signalant les contenus malveillants, soit en facilitant l’accès aux fournisseurs de solutions de sécurité.",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "LHC.lu",
+              "url": "https://lhc.lu"
+            },
+            {
+              "type": "link",
+              "label": "NC3.lu",
+              "url": "https://nc3.lu"
+            },
+            {
+              "type": "link",
+              "label": "CIRCL.lu",
+              "url": "https://circl.lu"
+            }
+          ]
+        },
+        {
+          "style": "light",
+          "title": "SIGNALEZ UNE CYBERFRAUDE",
+          "body": [
+            "Spambee est l’outil proposé par le NC3, et qui vous permettra de ne plus subir, en signalant les contenus dommageables, et en étant protégé de ceux qui ont déjà été signalés par d’autres utilisateurs.",
+            "Si vous ne pouvez utiliser Spambee mais que vous souhaitiez néanmoins signaler un site de phishing, il existe le service URL-Abuse du CIRCL, auquel vous pouvez accéder avec un simple navigateur."
+          ],
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "Spambee",
+              "url": "https://spambee.lu"
+            },
+            {
+              "type": "link",
+              "label": "CIRCL",
+              "url": "https://circl.lu/urlabuse"
+            }
+          ]
+        },
+        {
+          "style": "light",
+          "title": "LE PORTAIL NATIONAL DE LA CYBERSECURITE",
+          "body": "Cybersecurity.lu est le portail de l’écosystème, qui vous permettra d’identifier les fournisseurs de service en mesure de vous fournir la solution de sécurité adaptée à vos besoins.",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "cybersecurity.lu",
+              "url": "https://www.cybersecurity.lu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "fifth",
+      "titles": [
+        {
+          "title": "Mieux comprendre la cyberfraude",
+          "style": "secondary"
+        },
+        {
+          "title": "Phishing, fraude en ligne… on vous dit tout !",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "thief",
+          "style": "dark",
+          "title": "Qu’est-ce que la fraude en ligne ?",
+          "body": "Elle est représentée par l’ensemble des actes malhonnêtes commis en ligne, effectués en utilisant des moyens déloyaux destinés à tromper et obtenir un consentement, ou un avantage matériel ou moral indus, en contravention des lois et règlements. L’escroquerie est un type courant de fraude."
+        },
+        {
+          "icon": "fish",
+          "style": "dark",
+          "title": "Qu’est-ce que le phishing ?",
+          "body": [
+            "L’hameçonnage ou phishing en anglais consiste à envoyer un message, généralement un email, usurpant l’identité d’un tiers de confiance (banque, administration, réseau social, entreprise de livraison, commerce en ligne…) pour tromper la victime et l’inciter à communiquer ses données d’identité ou bancaires, ses mots de passe voire ses numéros de carte bancaire.",
+            "Si historiquement l’email a été le moyen de communication le plus utilisé, les fraudeurs ont depuis développé des techniques pouvant faire appels à d’autres canaux :"
+          ],
+          "footerItems": [
+            {
+              "type": "text",
+              "title": "Le sms",
+              "label": "on parle alors de smishing",
+              "icon": "sms"
+            },
+            {
+              "type": "text",
+              "title": "La vois (téléphone)",
+              "label": "on parle de vishing",
+              "icon": "phone_call"
+            },
+            {
+              "type": "text",
+              "title": "Les QR codes",
+              "label": "egalement appelé quishing",
+              "icon": "qr_code"
+            }
+          ]
+        },
+        {
+          "icon": "shield_2",
+          "style": "dark",
+          "title": "Quels sont les types de fraude les plus communément observés par la police grand-ducale ?",
+          "body": "Il existe de nombreux types de fraudes. La Police Grand-Ducale les a recensés et en a décrit le mode opératoire dans la page suivante : ",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "police.public.lu",
+              "url": "https://police.public.lu/fr/prevention/arnaques.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

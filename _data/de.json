@@ -1,3 +1,283 @@
 {
-  "message": "Hello world DE"
+  "hero": {
+    "content": [
+      {
+        "title": "Ein zweifelhafter Link?",
+        "style": "secondary"
+      },
+      {
+        "title": "Nicht anklicken!",
+        "style": "primary"
+      },
+      {
+        "title": "Überprüfe!",
+        "style": "primary"
+      },
+      {
+        "title": "Melde!",
+        "style": "primary"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "key": "first",
+      "titles": [
+        {
+          "title": "Glauben Sie, dass Sie einem Betrug zum Opfer gefallen sind?",
+          "style": "secondary"
+        },
+        {
+          "title": "Um Ihre Situation einzuschätzen, stellen Sie sich diese 3 Fragen:",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "style": "light",
+          "icon": "phone",
+          "iconSize": "normal",
+          "title": "AKönnen Sie Ihren Gesprächspartner nicht zurückrufen?",
+          "body": "Selbst wenn Sie einfach eine Nummer wählen, die Sie schon vor dem Anruf kannten, wie zum Beispiel die Nummer Ihrer Bankfiliale?"
+        },
+        {
+          "style": "light",
+          "icon": "bolt",
+          "iconSize": "normal",
+          "title": "Verlangt Ihr Gesprächspartner von Ihnen schnelles Handeln?",
+          "body": "Und ohne die üblichen Sicherheitsvorkehrungen zu beachten?"
+        },
+        {
+          "style": "light",
+          "icon": "key",
+          "iconSize": "normal",
+          "title": "Fragt Ihr Gesprächspartner Sie nach Ihrer PIN-Nummer?",
+          "body": "nach Ihrer Kreditkartennummer? nach der Installation einer Banking-App?"
+        },
+        {
+          "style": "alert",
+          "icon": "siren",
+          "iconSize": "normal",
+          "title": "Haben Sie auch nur eine dieser Fragen mit, Ja“beantwortet?",
+          "body": "Seien Sie vorsichtig!\nEs besteht akuter Betrugsverdacht!\n"
+        }
+      ]
+    },
+    {
+      "key": "second",
+      "titles": [
+        {
+          "title": "Für jede Situation den richtigen Ansprechpartner!",
+          "style": "primary"
+        }
+      ],
+      "accordionItems": [
+        {
+          "icon": "bank",
+          "title": "Ein Problem mit Ihrer Bank?",
+          "body": "Wenn Sie die Nummer Ihrer Filiale oder Ihres Beraters nicht zur Hand haben, können Sie die Kontaktdaten sicherlich auf jedem offiziellen Dokument finden, das die Bank Ihnen zugeschickt hat. Wenn Sie keine Nummer finden, nutzen Sie die Gelben Seiten des Online-Telefonbuchs, um die offizielle Nummer der Bank zu erhalten.\n\n__Außerhalb der Geschäftszeiten: Unter der Nummer 49-10-10 können Sie das mit Ihrem Bankkonto verknüpfte Luxtrust-Zertifikat und damit den Zugang zu Ihrem Bankkonto sperren lassen.__"
+        },
+        {
+          "icon": "luxtrust",
+          "title": "Betrug im Zusammenhang mit Ihrem LuxTrust-Konto?",
+          "body": "Um Ihr Luxtrust-Zertifikat sperren zu lassen oder auszusetzen, können Sie auch Ihre Luxtrust-Anwendung verwenden oder die folgende Nummer anrufen: 24 550 550 zu jeder Tages- und Nachtzeit.\n\n__Halten Sie die Antworten auf die Sicherheitsfragen bereit, die Sie bei der Aktivierung Ihrer Luxtrust-ID ausgewählt haben. Diese Antworten werden benötigt, damit der Mitarbeiter Sie am Telefon identifizieren kann.__"
+        },
+        {
+          "icon": "portal",
+          "title": "Ein Problem im Zusammenhang mit dem Staats- und öffentlichen Dienstleistungsportal: guichet.lu?",
+          "body": "Sie erreichen uns:\n - Telefon: Die Nummer des Helpdesks während der Öffnungszeiten lautet: (+352) 247 82 000\n - oWebsite: [https://guichet.public.lu/de/citoyens/actualites/2025/fevrier/12-govcert.html](https://guichet.public.lu/de/citoyens/actualites/2025/fevrier/12-govcert.html)\n - oMeldeformular von GOVCERT.LU: [https://govcert.lu/de/melden/](https://govcert.lu/de/melden/)"
+        },
+        {
+          "icon": "police",
+          "title": "Möchten Sie mehr über die verschiedenen Arten von Betrug erfahren?",
+          "body": "Für die verschiedenen Arten von Betrug können Sie sich an die Großherzogliche Polizei wenden, indem Sie einfach ein Kommissariat in Ihrer Nähe anrufen:\n - Karte der Kommissariate mit Nummern: [https://police.public.lu/de/votre-police/postes-police.html](https://police.public.lu/de/votre-police/postes-police.html)"
+        },
+        {
+          "icon": "company",
+          "title": "Müssen Sie die Existenz eines Finanzunternehmens überprüfen?",
+          "body": "Wenden Sie sich an die Aufsichtskommission des Finanzsektors CSSF:\n - Tel.: +352 2625 1 2194\n - Website: [https://www.cssf.lu](https://www.cssf.lu)\n - Email: [direction@cssf.lu](mailto:direction@cssf.lu)"
+        },
+        {
+          "icon": "shield",
+          "title": "Eine Frage zur Cybersicherheit?",
+          "body": "Die BEE SECURE Helpline ist ein vertraulicher Beratungsdienst. Jeder kann sich mit Fragen und praktischen Ratschlägen zur Internetsicherheit und zur digitalen Medienkompetenz an diese Stelle wenden. Der Dienst ist telefonisch unter der Nummer 8002 1234 oder [schriftlich](https://www.bee-secure.lu/de/formulaire-contact-bee-secure-helpline/) erreichbar"
+        }
+      ]
+    },
+    {
+      "key": "third",
+      "titles": [
+        {
+          "title": "Schützen Sie sich vor Cyberbetrug!",
+          "style": "secondary"
+        },
+        {
+          "title": "5 einfache Tipps für den Alltag",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "title": "HÜTEN SIE SICH VOR ZU GUTEN ANZEIGEN",
+          "body": "Wenn es zu schön ist, um wahr zu sein, ist es wahrscheinlich sogar an Weihnachten verdächtig!"
+        },
+        {
+          "title": "GEBEN SIE NIEMALS IHRE ANMELDEINFORMATIONEN WEITER",
+          "body": "Keine seriöse Organisation wird Sie per E-Mail, SMS, Telefonanruf, E-Mail-Anwendung oder sozialem Netzwerk nach Ihren Zugangsdaten (Name oder Benutzernamen und Passwort, PIN-Code) fragen."
+        },
+        {
+          "title": "VERDÄCHTIGE NACHRICHTEN MELDEN",
+          "body": "Wenn Sie eine verdächtige Nachricht von Ihrer Bank oder einer offiziellen Einrichtung erhalten, können Sie dies melden, indem Sie die Telefonzentrale der Bank, Ihre Filiale oder Ihren Berater anrufen oder die Telefonzentrale der Einrichtung, die die Nachricht angeblich gesendet hat. Im Falle einer verdächtigen E-Mail können Sie auch SPAMBEE (spambee.lu) verwenden, um sie zu melden und zum Schutz anderer in Luxemburg ansässiger Personen beizutragen."
+        },
+        {
+          "title": "NEHMEN SIE SICH ZEIT ZUM NACHDENKEN, BEVOR SIE KLICKEN",
+          "body": "Betrüger wollen in der Regel ein Gefühl der Dringlichkeit erzeugen und Sie dazu bringen, überstürzt zu handeln. Halten Sie einfach kurz inne und besinnen Sie sich auf Ihren gesunden Menschenverstand: Sie können immer noch die Nummer Ihrer Bank oder der Organisation wählen, die sich scheinbar mit Ihnen in Verbindung setzt, und fragen, ob sie wirklich mit Ihnen Kontakt aufgenommen hat. Zögern Sie nicht, die Dinge zu prüfen, wenn Sie sich nicht sicher sind."
+        },
+        {
+          "title": "NUTZEN SIE LUXTRUST, WENN MÖGLICH",
+          "body": "Verwenden Sie starke Authentifizierungsmechanismen wie die Luxtrust Mobile App, wenn diese verfügbar sind."
+        }
+      ]
+    },
+    {
+      "key": "fourth",
+      "titles": [
+        {
+          "title": "4 Websites, um mehr über Cyberbetrug zu erfahren",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "style": "light",
+          "title": "ZUVERLÄSSIGE INFORMATIONEN UND PRAKTISCHE RATSCHLÄGE",
+          "body": "BEE SECURE stellt zuverlässige Informationen und konkrete Tipps zur Verfügung, wie man sich online schützen kann. Die Website bietet eine breite Palette an Inhalten zu digitalen Risiken, aktuellen Trends und bewährten Verfahren sowie hilfreiche Veröffentlichungen, die Ihnen helfen, die digitale Welt besser zu verstehen.",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "bee-secure.lu",
+              "url": "https://www.bee-secure.lu/de/risks/phishing/"
+            }
+          ]
+        },
+        {
+          "style": "light",
+          "title": "WERKZEUGE ZUM SELBSTSCHUTZ",
+          "body": "Das Luxembourg House of Cybersecurity bietet verschiedene Dienste und Tools an, mit denen Sie sich aktiv schützen können, indem Sie entweder bösartige Inhalte melden oder den Zugang zu Anbietern von Sicherheitslösungen erleichtern.",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "LHC.lu",
+              "url": "https://lhc.lu"
+            },
+            {
+              "type": "link",
+              "label": "NC3.lu",
+              "url": "https://nc3.lu"
+            },
+            {
+              "type": "link",
+              "label": "CIRCL.lu",
+              "url": "https://circl.lu"
+            }
+          ]
+        },
+        {
+          "style": "light",
+          "title": "CYBER-BETRUG MELDEN",
+          "body": [
+            "Spambee ist das vom NC3 angebotene Tool, mit dem Sie sich keiner Gefahr mehr aussetzen müssen, indem Sie schädliche Inhalte melden und vor solchen geschützt sind, die bereits von anderen Nutzern gemeldet wurden.",
+            "Wenn Sie Spambee nicht verwenden können, aber dennoch eine Phishing-Website melden möchten, gibt es den URL-Abuse-Dienst von CIRCL, auf den Sie mit einem einfachen Browser zugreifen können."
+          ],
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "Spambee",
+              "url": "https://spambee.lu"
+            },
+            {
+              "type": "link",
+              "label": "CIRCL",
+              "url": "https://circl.lu/urlabuse"
+            }
+          ]
+        },
+        {
+          "style": "light",
+          "title": "DAS NATIONALE CYBERSECURITY-PORTAL",
+          "body": "Cybersecurity.lu ist das Portal des Ökosystems, über das Sie Dienstleister identifizieren können, die in der Lage sind, Ihnen die auf Ihre Bedürfnisse zugeschnittene Sicherheitslösung zu liefern.",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "cybersecurity.lu",
+              "url": "https://www.cybersecurity.lu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "fifth",
+      "titles": [
+        {
+          "title": "Cyberbetrug besser verstehen",
+          "style": "secondary"
+        },
+        {
+          "title": "Phishing, Online-Betrug … wir sagen Ihnen alles!",
+          "style": "primary"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "thief",
+          "style": "dark",
+          "title": "Was ist Online-Betrug?",
+          "body": "Dieser Begriff umfasst alle unehrlichen Handlungen, die online unter Verwendung unlauterer Mittel begangen werden, um zu täuschen und eine Zustimmung oder einen unrechtmäßigen materiellen oder moralischen Vorteil zu erlangen, was gegen Gesetze und Vorschriften verstößt. Kreditbetrug ist eine häufige Art des Betrugs."
+        },
+        {
+          "icon": "fish",
+          "style": "dark",
+          "title": "Was ist Phishing?",
+          "body": [
+            "Beim Phishing wird eine Nachricht, meist eine E-Mail, verschickt, die die Identität eines vertrauenswürdigen Dritten (Bank, Behörde, soziales Netzwerk, Lieferunternehmen, Onlinehandel usw.) vortäuscht, um das Opfer zu täuschen und es dazu zu bringen, seine Identitäts- oder Bankdaten, Passwörter oder sogar Kreditkartennummern preiszugeben.",
+            "In der Vergangenheit war die E-Mail das am häufigsten verwendete Kommunikationsmittel, doch inzwischen haben Betrüger Techniken entwickelt, die auch andere Kanäle nutzen können:"
+          ],
+          "footerItems": [
+            {
+              "type": "text",
+              "title": "Beispielsweise SMS ",
+              "label": "man spricht dann von Smishing",
+              "icon": "sms"
+            },
+            {
+              "type": "text",
+              "title": "Die Stimme (Telefon)",
+              "label": "man spricht dann von Vishing",
+              "icon": "phone_call"
+            },
+            {
+              "type": "text",
+              "title": "QR-codes",
+              "label": "auch Quishing genannt",
+              "icon": "qr_code"
+            }
+          ]
+        },
+        {
+          "icon": "shield_2",
+          "style": "dark",
+          "title": "Welche Arten von Betrug werden von der Großherzoglichen Polizei am häufigsten beobachtet?",
+          "body": "Es gibt viele verschiedene Arten von Betrug. Die Großherzogliche Polizei hat sie erfasst und die Vorgehensweisen auf der folgenden Seite beschrieben:",
+          "footerItems": [
+            {
+              "type": "link",
+              "label": "police.public.lu",
+              "url": "https://police.public.lu/de/prevention/arnaques.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

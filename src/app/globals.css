@@ -17,6 +17,7 @@
   --color-primary-dark: oklch(0.6667 0.1473 237.8);
   --color-secondary-dark: oklch(0.5771 0.2337 27.61);
   --color-secondary-mid: oklch(0.7311 0.1359 17.02);
+  --color-content: oklch(0 0 0);
 }
 
 @layer base {
@@ -35,6 +36,27 @@
   img {
     @apply m-0 p-0;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply m-0 p-0 font-secondary;
+  }
+
+  h1 {
+    @apply text-6xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  p {
+    @apply my-4;
+  }
 }
 
 @layer components {
@@ -42,17 +64,21 @@
     @apply flex flex-col max-w-none;
   }
 
+  .page-container {
+    @apply mx-auto w-full xl:max-w-[1920px] px-4 2xl:px-16;
+  }
+
   .section {
-    @apply flex flex-col mx-auto w-full xl:max-w-[1440px] px-4 2xl:px-16;
+    @apply flex flex-col mx-auto w-full xl:max-w-[1200px] px-4 2xl:px-0;
   }
 
   .transparent-stripes {
     background-image: repeating-linear-gradient(
       -45deg /* Diagonal direction */,
-      rgba(0, 0, 0, 0.05) 0px /* Stripe color with transparency */,
-      rgba(0, 0, 0, 0.05) 10px /* End of one stripe */,
-      transparent 10px /* Start of space between stripes */,
-      transparent 20px /* End of space between stripes */
+      rgba(255, 255, 255, 0.3) 0px /* Stripe color with transparency */,
+      rgba(255, 255, 255, 0.3) 15px /* End of one stripe */,
+      transparent 15px /* Start of space between stripes */,
+      transparent 30px /* End of space between stripes */
     );
   }
 
@@ -60,9 +86,9 @@
     background: repeating-linear-gradient(
       -45deg,
       var(--color-primary-light),
-      var(--color-primary-light) 10px,
-      var(--color-primary-superlight) 10px,
-      var(--color-primary-superlight) 20px
+      var(--color-primary-light) 15px,
+      var(--color-primary-superlight) 15px,
+      var(--color-primary-superlight) 30px
     );
   }
 
@@ -70,9 +96,9 @@
     background: repeating-linear-gradient(
       -45deg,
       var(--color-primary-dark),
-      var(--color-primary-dark) 10px,
-      var(--color-primary-mid) 10px,
-      var(--color-primary-mid) 20px
+      var(--color-primary-dark) 8px,
+      var(--color-primary-mid) 8px,
+      var(--color-primary-mid) 16px
     );
   }
 
@@ -80,9 +106,92 @@
     background: repeating-linear-gradient(
       -45deg,
       var(--color-secondary-dark),
-      var(--color-secondary-dark) 10px,
-      var(--color-secondary-mid) 10px,
-      var(--color-secondary-mid) 20px
+      var(--color-secondary-dark) 8px,
+      var(--color-secondary-mid) 8px,
+      var(--color-secondary-mid) 16px
     );
+  }
+
+  .primary {
+    @apply bg-primary text-white;
+  }
+
+  .secondary {
+    @apply bg-secondary text-white;
+  }
+
+  .card {
+    @apply flex flex-col items-center justify-start h-full p-8  font-primary;
+    @apply [clip-path:polygon(0_0,100%_0,100%_90%,80%_100%,0_100%)];
+
+    .card-body {
+      @apply text-base flex flex-col grow shrink mt-8;
+    }
+
+    .card-title {
+      @apply text-2xl text-secondary uppercase font-secondary mb-4;
+    }
+
+    .card-icon {
+      @apply my-8 h-36 flex items-center justify-center;
+    }
+
+    .card-footer {
+      @apply flex flex-col mt-auto min-h-[50px] gap-2;
+
+      a {
+        @apply text-primary hover:underline;
+      }
+    }
+
+    .card-footer-item {
+      @apply flex justify-start items-start gap-2;
+    }
+
+    &.light {
+      @apply bg-white text-content;
+    }
+
+    &.alert {
+      @apply bg-secondary text-white;
+
+      .card-title {
+        @apply text-white;
+      }
+    }
+
+    &.dark {
+      @apply bg-content/80   text-white;
+      @apply relative m-[4px] [clip-path:polygon(0_0,100%_0,100%_90%,85%_100%,0_100%)];
+
+      .card-icon {
+        @apply h-16 my-4 items-start justify-start w-full;
+      }
+
+      .card-body {
+        .card-title {
+          @apply text-white;
+        }
+      }
+    }
+  }
+
+  .accordion {
+    @apply flex w-full bg-white items-stretch justify-start font-primary;
+    a {
+      @apply text-primary hover:underline font-semibold;
+    }
+
+    & .accordion-title {
+      @apply cursor-pointer font-secondary text-secondary uppercase text-2xl w-full text-left;
+    }
+
+    & .accordion-body {
+      @apply pt-4 pr-4 origin-top transition duration-200 ease-out data-closed:-translate-y-6 data-closed:opacity-0 text-base w-full;
+
+      ul {
+        @apply list-disc list-inside;
+      }
+    }
   }
 }
