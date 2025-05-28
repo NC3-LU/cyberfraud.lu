@@ -4,11 +4,9 @@ services:
       context: ../../
      # Uncomment this if you need to deploy the docker image to a particular OS (e.g. linux/amd64 for debian-like 64b systems)
      # otherwise, the image will be created with the current machine architecture
-      dockerfile: /Dockerfile
       platforms:
         - "linux/amd64"
+      dockerfile: ./docker/build/Dockerfile
     image: ${IMAGE_NAME}
     ports:
-      - "${PORT}:3000"
-    volumes:
-      - ../../_data:/app/_data
+      - "${EXPOSED_PORT}:3000"

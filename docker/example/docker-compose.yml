@@ -1,7 +1,10 @@
 services:
   cyberfraud_lu_web:
     image: ${IMAGE_NAME}
+    env_file:
+      - ./.env
     ports:
-      - "${PORT}:3000"
+      - "${EXPOSED_PORT}:3000"
+      -
     volumes:
-      - {DATA_FOLDER}:/app/_data
+      - ${DATA_FOLDER}:/app/_data
