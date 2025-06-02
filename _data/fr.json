@@ -85,7 +85,7 @@
         {
           "icon": "portal",
           "title": "Un problème lié au portail de l’Etat et des services publics : guichet.lu ?",
-          "body": "Vous pouvez contanter: \n - Téléphone : le helpdesk aux heures d’ouverture : (+352) 247 82 000\n - Site web : [https://guichet.public.lu/fr/citoyens/actualites/2025/fevrier/12-govcert.html](https://guichet.public.lu/fr/citoyens/actualites/2025/fevrier/12-govcert.html) \n - Fiche de signalement du GOVCERT.LU : [https://govcert.lu/fr/signaler/](https://govcert.lu/fr/signaler/)"
+          "body": "Vous pouvez contanter: \n - Téléphone : le helpdesk aux heures d’ouverture : (+352) 247 82 000\n - Site web : [guichet.public.lu](https://guichet.public.lu/fr/citoyens/actualites/2025/fevrier/12-govcert.html) \n - Fiche de signalement du GOVCERT.LU : [https://govcert.lu/fr/signaler/](https://govcert.lu/fr/signaler/)"
         },
         {
           "icon": "police",
@@ -276,6 +276,21 @@
               "url": "https://police.public.lu/fr/prevention/arnaques.html"
             }
           ]
+        }
+      ]
+    },
+    {
+      "key": "sixth",
+      "titles": [
+        {
+          "title": "In collaboration with:",
+          "style": "secondary"
+        }
+      ],
+      "logos": [
+        {
+          "image": "/images/abbl.png",
+          "url": "https://abbl.lu"
         }
       ]
     }

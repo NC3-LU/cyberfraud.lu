@@ -50,7 +50,7 @@ export const Card = ({
           <div className={'card-icon'}>
             <Icon
               name={icon}
-              className={`${iconSize === 'normal' ? 'w-[152px]' : 'w-[189px]'} ${style === 'alert' || style === 'dark' ? 'text-white' : 'text-secondary'}`}
+              className={`${iconSize === 'normal' ? 'w-[70px] xl:w-[152px]' : 'w-[189px]'} ${style === 'alert' || style === 'dark' ? 'text-white' : 'text-secondary'}`}
               containerClassName={`${style === 'dark' ? 'w-[65px]' : ''}`}
             />
           </div>
@@ -81,7 +81,7 @@ export const Card = ({
             <div className={'card-footer'}>
               {footerItems.map((item) => {
                 return (
-                  <div className={'card-footer-item text-sm'} key={`card_${title}_${item.label}`}>
+                  <div className={'card-footer-item'} key={`card_${title}_${item.label}`}>
                     <div className={''}>
                       <Icon
                         name={item.icon || 'arrow'}
@@ -90,7 +90,7 @@ export const Card = ({
                       />
                     </div>
                     {isLink(item) ? (
-                      <Link href={item.url} target={'_blank'} rel={'noreferrer noopener'}>
+                      <Link href={item.url} target={'_blank'} rel={'noreferrer noopener'} className={'font-semibold'}>
                         {item.label}
                       </Link>
                     ) : (

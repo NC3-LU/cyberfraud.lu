@@ -7,14 +7,14 @@ type LayoutProps = React.PropsWithChildren<WithLocale>
 
 export const Layout = ({ children, currentLocale }: LayoutProps) => {
   return (
-    <main className={'main-container py-4'}>
-      <div className={'section'}>
-        <Header currentLocale={currentLocale} />
+    <main className={'main-container'}>
+      <div className={'page-container'}>
+        <div className={'section'}>
+          <Header currentLocale={currentLocale} />
+        </div>
       </div>
       {children}
-      <div className={'page-container'}>
-        <Footer />
-      </div>
+      <div className={'page-container'}>{<Footer />}</div>
     </main>
   )
 }

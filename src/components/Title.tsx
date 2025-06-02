@@ -17,7 +17,7 @@ export const TitleItem = ({
   style = 'primary',
   className = '',
 }: { title: string; style?: string; className?: string }) => {
-  return <span className={`${style} inline-block p-2 px-3 ${className}`}>{title}</span>
+  return <span className={`${style} inline-block p-2 px-3 max-w-[80%] xl:max-w-none ${className}`}>{title}</span>
 }
 
 export const Title = ({ level, title, style, className = '' }: TitleProps) => {

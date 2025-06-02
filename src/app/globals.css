@@ -20,13 +20,42 @@
   --color-content: oklch(0 0 0);
 }
 
+@layer utilities {
+  @keyframes shake {
+    0%,
+    90%,
+    100% {
+      transform: rotate(0);
+    }
+    91% {
+      transform: rotate(3deg);
+    }
+    93% {
+      transform: rotate(-3deg);
+    }
+    95% {
+      transform: rotateX(3deg);
+    }
+    97% {
+      transform: rotate(-3deg);
+    }
+    99% {
+      transform: rotate(0);
+    }
+  }
+
+  .animate-shake {
+    animation: shake 4s ease-out infinite;
+  }
+}
+
 @layer base {
   html {
-    @apply scroll-smooth font-primary;
+    @apply scroll-smooth font-primary max-w-screen overflow-x-hidden text-base;
   }
 
   body {
-    @apply mx-auto min-h-screen w-full overflow-x-hidden;
+    @apply mx-auto min-h-screen w-full max-w-full overflow-x-hidden;
   }
 
   *:focus {
@@ -47,11 +76,11 @@
   }
 
   h1 {
-    @apply text-6xl;
+    @apply text-5xl xl:text-6xl;
   }
 
   h2 {
-    @apply text-4xl;
+    @apply text-3xl xl:text-4xl;
   }
 
   p {
@@ -65,11 +94,11 @@
   }
 
   .page-container {
-    @apply mx-auto w-full xl:max-w-[1920px] px-4 2xl:px-16;
+    @apply mx-auto w-full xl:max-w-[1920px] px-0 lg:px-8;
   }
 
   .section {
-    @apply flex flex-col mx-auto w-full xl:max-w-[1200px] px-4 2xl:px-0;
+    @apply flex flex-col mx-auto w-full max-w-[1200px] px-4;
   }
 
   .transparent-stripes {
@@ -121,11 +150,15 @@
   }
 
   .card {
-    @apply flex flex-col items-center justify-start h-full p-8  font-primary;
+    @apply flex flex-col items-start xl:items-center justify-start h-full p-8  font-primary;
     @apply [clip-path:polygon(0_0,100%_0,100%_90%,80%_100%,0_100%)];
 
     .card-body {
       @apply text-base flex flex-col grow shrink mt-8;
+
+      & p {
+        @apply mb-4;
+      }
     }
 
     .card-title {
@@ -133,7 +166,7 @@
     }
 
     .card-icon {
-      @apply my-8 h-36 flex items-center justify-center;
+      @apply my-4 xl:my-8 h-18 xl:h-36 flex items-center justify-center;
     }
 
     .card-footer {
@@ -177,9 +210,22 @@
   }
 
   .accordion {
-    @apply flex w-full bg-white items-stretch justify-start font-primary;
+    @apply flex flex-col xl:flex-row w-full bg-white items-start xl:items-stretch justify-start font-primary py-4;
+
     a {
       @apply text-primary hover:underline font-semibold;
+    }
+
+    & .accordion-icon {
+      @apply flex items-start xl:items-center justify-start xl:justify-center w-[200px] p-4;
+    }
+
+    & .accordion-close-button {
+      @apply absolute top-0 right-0 transition duration-200 ease-out  w-0 h-0 ui-not-open:border-t-[50px] ui-not-open:border-l-[50px] ui-open:border-t-[80px] ui-open:border-l-[80px] border-t-primary border-l-transparent;
+    }
+
+    & .accordion-close-icon {
+      @apply absolute top-0 right-0 flex items-center justify-center ui-not-open:w-8 ui-not-open:h-8 ui-open:w-12 ui-open:h-12 text-white z-1;
     }
 
     & .accordion-title {
@@ -187,7 +233,7 @@
     }
 
     & .accordion-body {
-      @apply pt-4 pr-4 origin-top transition duration-200 ease-out data-closed:-translate-y-6 data-closed:opacity-0 text-base w-full;
+      @apply pt-4 pr-4 transition duration-200 ease-out data-closed:-translate-y-6 data-closed:opacity-0 text-base w-full;
 
       ul {
         @apply list-disc list-inside;

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Title } from '@/components/Title'
 
 type HeroProps = {
@@ -10,22 +9,15 @@ type HeroProps = {
 
 export const Hero = ({ content }: HeroProps) => {
   return (
-    <div className={'w-full relative'}>
-      <div
-        className={'absolute z-10 flex items-start justify-center w-full h-full section top-0 bottom-0 left-0  right-0'}
-      >
+    <div
+      className={
+        'w-full bg-[url(/images/bg1_mobile.png)] xl:bg-[url(/images/bg1.png)] bg-position-[top center] bg-cover bg-no-repeat min-h-[766px] xl:min-h-[1077px] flex items-end xl:items-center justify-center pb-16 xl:pb-0'
+      }
+    >
+      <div className={'flex items-start justify-center h-full section w-full'}>
         <div className={'text-left'}>
           <Title level={'h1'} className={'uppercase'} title={content} />
         </div>
-      </div>
-      <div className={'flex items-center justify-center'}>
-        <Image
-          src={'/images/bg1.png'}
-          alt={'Cyberfraud.lu hero section'}
-          width={1920}
-          height={1078}
-          className={'h-auto'}
-        />
       </div>
     </div>
   )

@@ -2,7 +2,6 @@ import { Layout } from '@/components/Layout'
 import type { Locale } from '@/types'
 import { Hero } from '@/components/Hero'
 import { Title } from '@/components/Title'
-import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { getHtmlFromMD, getTranslations } from '@/content/translations'
 import { Accordion } from '@/components/Accordion'
@@ -26,11 +25,12 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
     )
   }
 
-  const firstSection = translations.sections[0]
-  const secondSection = translations.sections[1]
-  const thirdSection = translations.sections[2]
-  const fourthSection = translations.sections[3]
-  const fifthSection = translations.sections[4]
+  const section1 = translations.sections[0]
+  const section2 = translations.sections[1]
+  const section3 = translations.sections[2]
+  const section4 = translations.sections[3]
+  const section5 = translations.sections[4]
+  // const section6 = translations.sections[5]
 
   return (
     <Layout currentLocale={locale}>
@@ -38,17 +38,17 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
         <Hero content={translations.hero.content} />
       </div>
       <div className={'page-container'}>
-        <div className={'primary-stripes py-24'}>
+        <div className={'primary-stripes py-8 md:py-24'}>
           <div className={'section'}>
-            <Title level={'h2'} title={firstSection.titles} />
+            <Title level={'h2'} title={section1.titles} />
           </div>
           <div className={'section mt-16'}>
-            <div className={'grid grid-cols-4 gap-2 auto-rows-fr'}>
+            <div className={'grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-2 auto-rows-fr pb-8 xl:pb-0'}>
               {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
-              {firstSection.cards.map((card: any, index: number) => {
+              {section1.cards.map((card: any, index: number) => {
                 return (
                   <Card
-                    key={`first_section_card_${
+                    key={`section1_card_${
                       // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                       index
                     }`}
@@ -56,6 +56,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
                     style={card.style}
                     body={card.body}
                     icon={card.icon}
+                    className={`${card.style === 'alert' ? 'animate-shake' : ''}`}
                   />
                 )
               })}
@@ -66,17 +67,17 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
       <div className='page-container'>
         <div className='bg-primary-light pb-16'>
           <div className='section'>
-            <Title level='h2' title={secondSection.titles} />
+            <Title level='h2' title={section2.titles} />
           </div>
-          <div className='section my-16'>
+          <div className='section my-8 xl:my-16'>
             <div className={'flex flex-col gap-4'}>
               {
                 await Promise.all(
                   // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-                  secondSection.accordionItems.map(async (item: any, index: number) => {
+                  section2.accordionItems.map(async (item: any, index: number) => {
                     return (
                       <Accordion
-                        key={`second_section_accordion_${
+                        key={`section2_accordion_${
                           // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                           index
                         }`}
@@ -92,79 +93,61 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
           </div>
         </div>
       </div>
-      <div className={'page-container relative'}>
-        <div className={'absolute top-0 left-0 right-0 bottom-0 page-container'}>
-          <div className={'w-full h-full flex flex-col items-start justify-start py-40'}>
-            <div className={'section pb-24'}>
-              <Title level={'h2'} title={thirdSection.titles} />
-            </div>
-            <div className={'section pt-4 pb-16'}>
-              <div className={'flex flex-col items-center justify-center w-full gap-4'}>
-                {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
-                {thirdSection.cards.map((item: any, index: number) => {
-                  return (
+      <div className={'page-container'}>
+        <div
+          className={
+            "w-full h-full flex flex-col items-start justify-start py-16 xl:py-40 bg-[url('/images/bg4_mobile.png')] xl:bg-[url('/images/bg4.png')] bg-position-[top_center] lg:bg-cover  bg-auto bg-no-repeat"
+          }
+        >
+          <div className={'section pb-16 xl:pb-24'}>
+            <Title level={'h2'} title={section3.titles} />
+          </div>
+          <div className={'section pt-4 pb-16'}>
+            <div className={'flex flex-col items-center justify-center w-full gap-4'}>
+              {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+              {section3.cards.map((item: any, index: number) => {
+                return (
+                  <div
+                    key={`horizontal_card_${
+                      // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                      index
+                    }`}
+                    className={
+                      'w-full flex items-start xl:items-stretch justify-center h-auto xl:h-[180px] bg-transparent xl:bg-white'
+                    }
+                  >
                     <div
-                      key={`horizontal_card_${
-                        // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                        index
-                      }`}
-                      className={'w-full flex items-stretch justify-center h-[180px] bg-white'}
+                      className={`${(index + 1) % 2 === 0 ? 'xl:order-2 primary-stripes-dark' : 'xl:order-1 secondary-stripes-dark'} w-[120px] xl:w-[390px] flex items-center justify-center font-secondary text-6xl xl:text-9xl text-white py-8 xl:py-0`}
                     >
-                      <div
-                        className={`${(index + 1) % 2 === 0 ? 'order-2 primary-stripes-dark' : 'order-1 secondary-stripes-dark'} w-[390px] flex items-center justify-center font-secondary text-9xl text-white`}
-                      >
-                        0{index + 1}
-                      </div>
-                      <div
-                        className={` ${(index + 1) % 2 === 0 ? 'order-1' : 'order-2'} flex-8/12 flex flex-col items-start justify-center p-4 px-8 gap-2 ${(index + 1) % 2 === 0 ? 'text-primary' : 'text-secondary'}`}
-                      >
-                        <div className={'font-secondary text-2xl uppercase'}>{item.title}</div>
-                        <div className={'text-base/5'}>{item.body}</div>
-                      </div>
+                      0{index + 1}
                     </div>
-                  )
-                })}
-              </div>
+                    <div
+                      className={` ${(index + 1) % 2 === 0 ? 'xl:order-1' : 'xl:order-2'} bg-white flex-1 flex flex-col items-start justify-center p-4 px-8 gap-2 ${(index + 1) % 2 === 0 ? 'text-primary' : 'text-secondary'} text-wrap`}
+                    >
+                      <div className={'font-secondary text-2xl uppercase break-words'}>{item.title}</div>
+                      <div className={'text-base/5 break-words'}>{item.body}</div>
+                    </div>
+                  </div>
+                )
+              })}
             </div>
-            <div className={'transparent-stripes w-full pb-24'}>
-              <div className={'section pb-16'}>
-                <Title level={'h2'} title={fourthSection.titles} />
-              </div>
-              <div className={'section mt-16'}>
-                <div className={'grid grid-cols-4 gap-2'}>
-                  {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
-                  {fourthSection.cards.map((card: any, index: number) => {
-                    return (
-                      <Card
-                        style={card.style}
-                        key={`fourthSection_card_${
-                          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                          index
-                        }`}
-                        title={card.title}
-                        body={card.body}
-                        footerItems={card.footerItems}
-                      />
-                    )
-                  })}
-                </div>
-              </div>
+          </div>
+          <div className={'transparent-stripes w-full pb-24'}>
+            <div className={'section pb-16'}>
+              <Title level={'h2'} title={section4.titles} />
             </div>
-            <div className={'section pt-36 pb-24'}>
-              <Title level={'h2'} title={fifthSection.titles} />
-            </div>
-            <div className={'section mt-16'}>
-              <div className={'grid grid-cols-3 gap-4 items-start'}>
+            <div className={'section mt-8 xl:mt-16 overflow-x-auto'}>
+              <div className={'grid grid-cols-4 gap-4 w-[max-content] xl:w-full'}>
                 {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
-                {fifthSection.cards.map((card: any, index: number) => {
+                {section4.cards.map((card: any, index: number) => {
                   return (
                     <Card
-                      key={`fifthSection_card_${
+                      className={'max-w-[300px] xl:max-w-none'}
+                      style={card.style}
+                      key={`section4_card_${
                         // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                         index
                       }`}
-                      icon={card.icon}
-                      style={card.style}
                       title={card.title}
                       body={card.body}
                       footerItems={card.footerItems}
@@ -174,24 +157,36 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
               </div>
             </div>
           </div>
-        </div>
-        <div className={'flex flex-col -z-10'}>
-          <Image
-            src={'/images/bg2.png'}
-            alt={'Cyberfraud.lu'}
-            width={1920}
-            height={1077}
-            className={'w-full h-auto object-contain'}
-          />
-          <Image
-            src={'/images/bg3.png'}
-            alt={'Cyberfraud.lu'}
-            width={1920}
-            height={1077}
-            className={'w-full h-auto object-contain'}
-          />
+          <div className={'section pt-8 xl:pt-36 pb-8 xl:pb-24'}>
+            <Title level={'h2'} title={section5.titles} />
+          </div>
+          <div className={'section mt-0 xl:mt-16'}>
+            <div className={'grid grid-cols-1 xl:grid-cols-3 gap-4 items-start'}>
+              {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+              {section5.cards.map((card: any, index: number) => {
+                return (
+                  <Card
+                    key={`section5_card_${
+                      // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                      index
+                    }`}
+                    icon={card.icon}
+                    style={card.style}
+                    title={card.title}
+                    body={card.body}
+                    footerItems={card.footerItems}
+                  />
+                )
+              })}
+            </div>
+          </div>
         </div>
       </div>
+      {/*<div className={'page-container'}>*/}
+      {/*  <div className={'section bg-white'}>*/}
+      {/*    <Title level={'h2'} title={section6.titles} />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
     </Layout>
   )
 }

@@ -7,8 +7,8 @@ type HeaderProps = WithLocale
 
 export const Header = ({ currentLocale }: HeaderProps) => {
   return (
-    <div className={'flex justify-between items-center py-16'}>
-      <div className={'w-[350px] h-[80px]'}>
+    <div className={'flex justify-between items-center py-4 xl:py-16'}>
+      <div className={'w-[220px] xl:w-[350px] h-[50px] xl:h-[80px]'}>
         <Link href='/'>
           <Image
             src={'/images/cy_logo.svg'}
