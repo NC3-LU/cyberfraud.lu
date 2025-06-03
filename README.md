@@ -121,7 +121,7 @@ installed.
 This software is licensed under
 [GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.html).
 
-* Copyright (C) 2019-2025 NC3 Luxembourg
+* Copyright (C) 2025 NC3 Luxembourg
 
 For more information, [the list of authors and contributors](AUTHORS.md)
 is available.
