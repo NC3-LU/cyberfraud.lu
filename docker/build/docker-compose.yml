@@ -10,3 +10,5 @@ services:
     image: ${IMAGE_NAME}
     ports:
       - "${EXPOSED_PORT}:3000"
+    volumes:
+      - ${DATA_FOLDER}:/app/_data
