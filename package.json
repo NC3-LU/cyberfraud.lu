@@ -4,7 +4,8 @@
   "private": true,
   "author": {
     "name": "Andrea Frittella",
-    "email": "andrea.frittella@nc3.lu"
+    "email": "andrea.frittella@nc3.lu",
+    "url": "https://nc3.lu"
   },
   "scripts": {
     "dev": "next dev --turbopack",
