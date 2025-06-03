@@ -116,3 +116,13 @@ installed.
 > Check the [docker/example](docker/example)
 
 
+## License
+
+This software is licensed under
+[GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.html).
+
+* Copyright (C) 2019-2025 Andrea Fritella
+* Copyright (C) 2019-2025 LHC
+
+For more information, [the list of authors and contributors](AUTHORS.md)
+is available.
