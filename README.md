@@ -23,6 +23,7 @@ Then:
 - Clone the project
 - run `pnpm install`
 - run `pnpm dev `
+- open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Linting, formatting, checking types
 
@@ -57,8 +58,6 @@ pnpm check
 ```bash
 pnpm typecheck
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/local/page.tsx`. The page auto-updates as you edit the file.
 
