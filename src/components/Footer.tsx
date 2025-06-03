@@ -2,10 +2,21 @@ import Image from 'next/image'
 import {} from 'react-icons/fa6'
 import Link from 'next/link'
 
-export const Footer = () => {
+type FooterProps = {
+  siteDescription: string
+  patronage: string
+}
+
+export const Footer = ({ siteDescription, patronage }: FooterProps) => {
   return (
-    <div className={'bg-content py-16 pt-18 xl:pt-36'}>
+    <div className={'bg-content py-16 pt-10 xl:pt-18'}>
       <div className={'section text-white'}>
+        <div className={'text-secondary uppercase mt-8 xl:mt-18 mb-16 text-center xl:text-left'}>
+          <Link href={'/'} className={'font-semibold hover:underline'}>
+            cyberfraud.lu
+          </Link>{' '}
+          {siteDescription}
+        </div>
         <div
           className={
             'flex flex-col xl:flex-row items-center xl:items-end justify-center xl:justify-between mb-16 gap-16 xl:gap-2'
@@ -16,10 +27,7 @@ export const Footer = () => {
               'w-[80%] xl:w-full xl:max-w-max mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center'
             }
           >
-            <div className={'mb-4 uppercase text-base text-center xl:text-left'}>
-              sous le haut patronage <br />
-              du ministère de l’Économie
-            </div>
+            <div className={'mb-4 uppercase text-base text-center xl:text-left'}>{patronage}</div>
             <div className={'w-full'}>
               <Link href={'https://meco.gouvernement.lu/fr.html'} target={'_blank'} rel={'noreferrer noopener'}>
                 <Image src={'/images/meco.svg'} alt={'MECO'} width={200} height={200} className={'h-auto w-full'} />

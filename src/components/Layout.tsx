@@ -3,9 +3,14 @@ import type { WithLocale } from '@/types'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
-type LayoutProps = React.PropsWithChildren<WithLocale>
+type LayoutProps = React.PropsWithChildren<
+  WithLocale & {
+    siteDescription?: string
+    patronage?: string
+  }
+>
 
-export const Layout = ({ children, currentLocale }: LayoutProps) => {
+export const Layout = ({ children, currentLocale, siteDescription = '', patronage = '' }: LayoutProps) => {
   return (
     <main className={'main-container'}>
       <div className={'page-container'}>
@@ -14,7 +19,7 @@ export const Layout = ({ children, currentLocale }: LayoutProps) => {
         </div>
       </div>
       {children}
-      <div className={'page-container'}>{<Footer />}</div>
+      <div className={'page-container'}>{<Footer siteDescription={siteDescription} patronage={patronage} />}</div>
     </main>
   )
 }

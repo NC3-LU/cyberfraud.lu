@@ -19,6 +19,10 @@
       }
     ]
   },
+  "footer": {
+    "siteDescription": "is the official platform for preventing cyberfraud in Luxembourg.",
+    "patronage": "sous le haut patronage du ministère de l’Économie"
+  },
   "sections": [
     {
       "key": "first",

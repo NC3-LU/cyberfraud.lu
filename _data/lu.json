@@ -19,6 +19,10 @@
       }
     ]
   },
+  "footer": {
+    "siteDescription": "ass déi offiziell Plattform fir d'Preventioun vu Cyberbetrug zu Lëtzebuerg.",
+    "patronage": "ënnert der héijer Patronage vum Wirtschaftsministère"
+  },
   "sections": [
     {
       "key": "first",
@@ -151,7 +155,7 @@
         {
           "style": "light",
           "title": "ZOUVERLÄSSEG INFORMATIOUNEN AN KONKRET ROTSCHLEI",
-          "body": "BEE SECURE bitt zouverlässeg Informatioun a praktesch Rotschléi fir Iech selwer online ze schützen. De Site bitt eng breet Palette vun Inhalter iwwer digital Risiken, aktuell Trends a bescht Praktiken, souwéi nëtzlech Publikatiounen fir d'digital Welt besser ze verstoen.",
+          "body": "D’BEE SECURE Helpline ass e vertrauleche Berodungsdéngscht. Jidderee ka sech un dëse Service wenden, fir Froën zum Thema Internetsécherheet an der digitaler Mediebildung ze stellen a praktesch Rotschléi ze kréien. De Service ass iwwer Telefon op der Nummer 8002 1234 oder schrëftlech erreechbar.",
           "footerItems": [
             {
               "type": "link",

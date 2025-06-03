@@ -19,6 +19,10 @@
       }
     ]
   },
+  "footer": {
+    "siteDescription": "ist die offizielle Plattform zur Cyberbetrugsprävention in Luxemburg.",
+    "patronage": "unter der Schirmherrschaft des Wirtschaftsministeriums"
+  },
   "sections": [
     {
       "key": "first",

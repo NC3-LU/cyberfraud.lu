@@ -33,7 +33,11 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
   // const section6 = translations.sections[5]
 
   return (
-    <Layout currentLocale={locale}>
+    <Layout
+      currentLocale={locale}
+      siteDescription={translations.footer.siteDescription}
+      patronage={translations.footer.patronage}
+    >
       <div className={'page-container'}>
         <Hero content={translations.hero.content} />
       </div>
