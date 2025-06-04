@@ -23,6 +23,116 @@
     "siteDescription": "ist die offizielle Plattform zur Cyberbetrugsprävention in Luxemburg.",
     "patronage": "unter der Schirmherrschaft des Wirtschaftsministeriums"
   },
+  "partners": [
+    {
+      "titles": [
+        {
+          "title": "In collaboration with",
+          "style": "secondary"
+        }
+      ],
+      "items": [
+        [
+          {
+            "name": "ABBL",
+            "image": "/images/abbl.svg",
+            "url": "https://abbl.lu"
+          },
+          {
+            "name": "Fondation ABBL",
+            "image": "/images/abbl_fondation.png",
+            "url": "https://www.abbl.lu/en/consumers/financial-education/abbl-foundation"
+          },
+          {
+            "name": "LuxTrust",
+            "image": "/images/luxtrust.svg",
+            "url": "https://www.luxtrust.com/fr"
+          },
+          {
+            "name": "Luxembourg House of Cybersecurity",
+            "image": "/images/lhc.png",
+            "url": "https://lhc.lu"
+          }
+        ],
+        [
+          {
+            "name": "Banque Centrale Du Luxembourg",
+            "image": "/images/bcl.png",
+            "url": "https://bcl.lu"
+          },
+          {
+            "name": "BeeSecure",
+            "image": "/images/beesecure.png",
+            "url": "https://bee-secure.lu"
+          },
+          {
+            "name": "CSSF",
+            "image": "/images/cssf.svg",
+            "url": "https://cssf.lu"
+          },
+          {
+            "name": "ILR",
+            "image": "/images/ilr.svg",
+            "url": "https://ilr.lu"
+          },
+          {
+            "name": "My Connectivity",
+            "image": "/images/myconnectivity.png",
+            "url": "https://myconnectivity.lu"
+          }
+        ]
+      ]
+    },
+    {
+      "titles": [
+        {
+          "title": "With the support of",
+          "style": "primary"
+        }
+      ],
+      "items": [
+        [
+          {
+            "name": "Commissariat Aux Assurances",
+            "image": "/images/caa.svg",
+            "url": "https://caa.lu"
+          },
+          {
+            "name": "House of Entrepreneurship",
+            "image": "/images/hoe.png",
+            "url": "https://www.houseofentrepreneurship.lu/"
+          }
+        ],
+        [
+          {
+            "name": "Association des Compagnies D'Assurances de Réassurances",
+            "image": "/images/aca.svg",
+            "url": "https://aca.lu"
+          },
+          {
+            "name": "Fedil",
+            "image": "/images/fedil.png",
+            "url": "https://fedil.lu"
+          },
+          {
+            "name": "Finance & Technology Luxembourg",
+            "image": "/images/ftl.svg",
+            "url": "https://www.financeandtechnology.lu/"
+          },
+          {
+            "name": "ICT Luxembourg",
+            "image": "/images/ict.svg",
+            "url": "https://www.ictluxembourg.lu/"
+          },
+          {
+            "name": "Police",
+            "image": "/images/police.svg",
+            "url": "https://police.lu"
+          }
+        ]
+      ]
+    }
+  ],
   "sections": [
     {
       "key": "first",
@@ -84,7 +194,7 @@
         {
           "icon": "luxtrust",
           "title": "Betrug im Zusammenhang mit Ihrem LuxTrust-Konto?",
-          "body": "Um Ihr Luxtrust-Zertifikat sperren zu lassen oder auszusetzen, können Sie auch Ihre Luxtrust-Anwendung verwenden oder die folgende Nummer anrufen: 24 550 550 zu jeder Tages- und Nachtzeit.\n\n__Halten Sie die Antworten auf die Sicherheitsfragen bereit, die Sie bei der Aktivierung Ihrer Luxtrust-ID ausgewählt haben. Diese Antworten werden benötigt, damit der Mitarbeiter Sie am Telefon identifizieren kann.__"
+          "body": "Um sein Zertifikat auszusetzen oder zu widerrufen, kann der Kunde den LuxTrust Customer Care anrufen oder auf der LuxTrust-Website - [www.luxtrust.com](https://www.luxtrust.com) im Bereich _My LuxTrust_ auf _Vorübergehend mein Zertifikat sperren oder Sperren mein Zertifikat_ gehen.\n\nDarüber hinaus können diese Schritte auch persönlich in unseren Räumlichkeiten in Capellen (IVY Building, 13-15 Parc d'activités, L-8308 Capellen, Luxemburg) von Montag bis Freitag von 8:00 bis 18:00 Uhr durchgeführt werden.\n\n__Halten Sie die Antworten auf die Sicherheitsfragen bereit, die Sie bei der Aktivierung Ihrer Luxtrust-ID ausgewählt haben. Diese Antworten werden benötigt, damit der Mitarbeiter Sie am Telefon identifizieren kann.__"
         },
         {
           "icon": "portal",
@@ -190,7 +300,7 @@
           "style": "light",
           "title": "CYBER-BETRUG MELDEN",
           "body": [
-            "Spambee ist das vom NC3 angebotene Tool, mit dem Sie sich keiner Gefahr mehr aussetzen müssen, indem Sie schädliche Inhalte melden und vor solchen geschützt sind, die bereits von anderen Nutzern gemeldet wurden.",
+            "Spambee ist das vom \"National Cybersecurity Competence Center\" (NC3) angebotene Tool, mit dem Sie sich keiner Gefahr mehr aussetzen müssen, indem Sie schädliche Inhalte melden und vor solchen geschützt sind, die bereits von anderen Nutzern gemeldet wurden.",
             "Wenn Sie Spambee nicht verwenden können, aber dennoch eine Phishing-Website melden möchten, gibt es den URL-Abuse-Dienst von CIRCL, auf den Sie mit einem einfachen Browser zugreifen können."
           ],
           "footerItems": [

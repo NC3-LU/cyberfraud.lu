@@ -5,6 +5,8 @@ import { Title } from '@/components/Title'
 import { Card } from '@/components/Card'
 import { getHtmlFromMD, getTranslations } from '@/content/translations'
 import { Accordion } from '@/components/Accordion'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default async function Home({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params
@@ -30,7 +32,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
   const section3 = translations.sections[2]
   const section4 = translations.sections[3]
   const section5 = translations.sections[4]
-  // const section6 = translations.sections[5]
+  const [partners1, partners2] = translations.partners
 
   return (
     <Layout
@@ -186,11 +188,93 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
           </div>
         </div>
       </div>
-      {/*<div className={'page-container'}>*/}
-      {/*  <div className={'section bg-white'}>*/}
-      {/*    <Title level={'h2'} title={section6.titles} />*/}
-      {/*  </div>*/}
-      {/*</div>*/}
+      <div className={'page-container'}>
+        <div className={'section bg-white'}>
+          <Title level={'h2'} title={partners1.titles} />
+        </div>
+        <div className={'section py-16'}>
+          <div
+            className={'grid grid-cols-2 xl:grid-cols-4 gap-16 xl:gap-8 w-full auto-rows-[60px] xl:auto-rows-[80px]'}
+          >
+            {partners1.items[0].map((item: any) => {
+              return (
+                <div key={`partners1_item_${item.name}`} className={'flex  justify-center items-center '}>
+                  <Link href={item.url} target={'_blank'} rel={'noreferrer noopener'}>
+                    <Image src={item.image} alt={item.name} className={'w-full h-auto'} width={200} height={80} />
+                  </Link>
+                </div>
+              )
+            })}
+          </div>
+          <div
+            className={
+              'grid grid-cols-3 xl:grid-cols-5 gap-8 w-full mt-16 items-center auto-rows-[40px] xl:auto-rows-[60px] justify-center'
+            }
+          >
+            {partners1.items[1].map((item: any) => {
+              return (
+                <Link
+                  key={`partners1_item_${item.name}`}
+                  href={item.url}
+                  target={'_blank'}
+                  rel={'noreferrer noopener'}
+                  className={'w-auto h-full m-auto'}
+                >
+                  <Image src={item.image} alt={item.name} className={'w-auto h-full m-auto'} width={130} height={80} />
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+      <div className={'page-container'}>
+        <div className={'border-t-primary border-t-4'}>
+          <div className={'section bg-white'}>
+            <Title level={'h2'} title={partners2.titles} />
+          </div>
+          <div className={'section py-16'}>
+            <div className={'grid grid-cols-2 gap-8 w-full justify-between auto-rows-[60px] xl:auto-rows-[100px]'}>
+              {partners2.items[0].map((item: any, index: number) => {
+                return (
+                  <div
+                    key={`partners2_item_${item.name}`}
+                    className={`flex items-center flex-1/2 ${index === 0 ? 'justify-start text-left' : 'justify-end text-right'}`}
+                  >
+                    <Link href={item.url} target={'_blank'} rel={'noreferrer noopener'} className={'w-auto h-full'}>
+                      <Image src={item.image} alt={item.name} className={'w-auto h-full'} width={500} height={100} />
+                    </Link>
+                  </div>
+                )
+              })}
+            </div>
+            <div
+              className={
+                'grid grid-cols-3 xl:grid-cols-5 gap-16 xl:gap-8 w-full justify-center mt-16 flex-wrap auto-rows-[40px] xl:auto-rows-[60px]'
+              }
+            >
+              {partners2.items[1].map((item: any) => {
+                return (
+                  <Link
+                    href={item.url}
+                    target={'_blank'}
+                    rel={'noreferrer noopener'}
+                    key={`partners2_item_${item.name}`}
+                    className={'w-auto h-full m-auto'}
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      className={'w-auto h-full m-auto'}
+                      width={130}
+                      height={80}
+                    />
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

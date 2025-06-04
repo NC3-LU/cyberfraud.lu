@@ -23,6 +23,116 @@
     "siteDescription": "is the official platform for preventing cyberfraud in Luxembourg.",
     "patronage": "sous le haut patronage du ministère de l’Économie"
   },
+  "partners": [
+    {
+      "titles": [
+        {
+          "title": "In collaboration with",
+          "style": "secondary"
+        }
+      ],
+      "items": [
+        [
+          {
+            "name": "ABBL",
+            "image": "/images/abbl.svg",
+            "url": "https://abbl.lu"
+          },
+          {
+            "name": "Fondation ABBL",
+            "image": "/images/abbl_fondation.png",
+            "url": "https://www.abbl.lu/en/consumers/financial-education/abbl-foundation"
+          },
+          {
+            "name": "LuxTrust",
+            "image": "/images/luxtrust.svg",
+            "url": "https://www.luxtrust.com/fr"
+          },
+          {
+            "name": "Luxembourg House of Cybersecurity",
+            "image": "/images/lhc.png",
+            "url": "https://lhc.lu"
+          }
+        ],
+        [
+          {
+            "name": "Banque Centrale Du Luxembourg",
+            "image": "/images/bcl.png",
+            "url": "https://bcl.lu"
+          },
+          {
+            "name": "BeeSecure",
+            "image": "/images/beesecure.png",
+            "url": "https://bee-secure.lu"
+          },
+          {
+            "name": "CSSF",
+            "image": "/images/cssf.svg",
+            "url": "https://cssf.lu"
+          },
+          {
+            "name": "ILR",
+            "image": "/images/ilr.svg",
+            "url": "https://ilr.lu"
+          },
+          {
+            "name": "My Connectivity",
+            "image": "/images/myconnectivity.png",
+            "url": "https://myconnectivity.lu"
+          }
+        ]
+      ]
+    },
+    {
+      "titles": [
+        {
+          "title": "With the support of",
+          "style": "primary"
+        }
+      ],
+      "items": [
+        [
+          {
+            "name": "Commissariat Aux Assurances",
+            "image": "/images/caa.svg",
+            "url": "https://caa.lu"
+          },
+          {
+            "name": "House of Entrepreneurship",
+            "image": "/images/hoe.png",
+            "url": "https://www.houseofentrepreneurship.lu/"
+          }
+        ],
+        [
+          {
+            "name": "Association des Compagnies D'Assurances de Réassurances",
+            "image": "/images/aca.svg",
+            "url": "https://aca.lu"
+          },
+          {
+            "name": "Fedil",
+            "image": "/images/fedil.png",
+            "url": "https://fedil.lu"
+          },
+          {
+            "name": "Finance & Technology Luxembourg",
+            "image": "/images/ftl.svg",
+            "url": "https://www.financeandtechnology.lu/"
+          },
+          {
+            "name": "ICT Luxembourg",
+            "image": "/images/ict.svg",
+            "url": "https://www.ictluxembourg.lu/"
+          },
+          {
+            "name": "Police",
+            "image": "/images/police.svg",
+            "url": "https://police.lu"
+          }
+        ]
+      ]
+    }
+  ],
   "sections": [
     {
       "key": "first",
@@ -84,12 +194,12 @@
         {
           "icon": "luxtrust",
           "title": "Une fraude liée à votre compte LuxTrust ?",
-          "body": "Pour bloquer ou suspendre votre certificat Luxtrust, vous pouvez utiliser votre application Luxtrust ou appeler le numéro suivant : 24 550 550 à toute heure du jour ou de la nuit.\n\n__Munissez-vous des réponses aux questions de sécurité que vous aviez choisies lors de l’activation de votre identifiant Luxtrust. Ces réponses seront nécessaires pour que l’opérateur soit en mesure de vous identifier.__"
+          "body": "Pour suspendre ou révoquer son certificat, le client peut appeler le Customer Care de LuxTrust ou se rendre sur le site LuxTrust  - [www.luxtrust.com](https://www.luxtrust.com), dans l’espace _My LuxTrust_ sur _Suspendre temporairement mon certificat ou Révoquer définitivement mon certificat_.\n\nPar ailleurs, ces démarches peuvent aussi être effectuées en personne, dans nos locaux à Capellen (IVY Building, 13-15 Parc d’activités, L-8308 Capellen, Luxembourg) du lundi au vendredi, du 8h à 18h.\n\n__Munissez-vous des réponses aux questions de sécurité que vous aviez choisies lors de l’activation de votre identifiant Luxtrust. Ces réponses seront nécessaires pour que l’opérateur soit en mesure de vous identifier.__"
         },
         {
           "icon": "portal",
           "title": "Un problème lié au portail de l’Etat et des services publics : guichet.lu ?",
-          "body": "Vous pouvez contanter: \n - Téléphone : le helpdesk aux heures d’ouverture : (+352) 247 82 000\n - Site web : [guichet.public.lu](https://guichet.public.lu/fr/citoyens/actualites/2025/fevrier/12-govcert.html) \n - Fiche de signalement du GOVCERT.LU : [https://govcert.lu/fr/signaler/](https://govcert.lu/fr/signaler/)"
+          "body": "Vous pouvez contacter: \n - Téléphone : le helpdesk aux heures d’ouverture : (+352) 247 82 000\n - Site web : [guichet.public.lu](https://guichet.public.lu/fr/citoyens/actualites/2025/fevrier/12-govcert.html) \n - Fiche de signalement du GOVCERT.LU : [https://govcert.lu/fr/signaler/](https://govcert.lu/fr/signaler/)"
         },
         {
           "icon": "police",
@@ -139,7 +249,7 @@
         },
         {
           "title": "UTILISEZ LUXTRUST QUAND C’EST POSSIBLE",
-          "body": "Utilisez les mécanismes d’authentification forte tels que l’application mobile Luxtrust, lorsqu’ils sont disponibles."
+          "body": "Utilisez les mécanismes d’authentification forte tels que l’application Luxtrust Mobile, lorsqu’ils sont disponibles."
         }
       ]
     },
@@ -190,7 +300,7 @@
           "style": "light",
           "title": "SIGNALEZ UNE CYBERFRAUDE",
           "body": [
-            "Spambee est l’outil proposé par le NC3, et qui vous permettra de ne plus subir, en signalant les contenus dommageables, et en étant protégé de ceux qui ont déjà été signalés par d’autres utilisateurs.",
+            "Spambee est l’outil proposé par le \"National Cybersecurity Competence Center\" (NC3), et qui vous permettra de ne plus subir, en signalant les contenus dommageables, et en étant protégé de ceux qui ont déjà été signalés par d’autres utilisateurs.",
             "Si vous ne pouvez utiliser Spambee mais que vous souhaitiez néanmoins signaler un site de phishing, il existe le service URL-Abuse du CIRCL, auquel vous pouvez accéder avec un simple navigateur."
           ],
           "footerItems": [
@@ -256,7 +366,7 @@
             },
             {
               "type": "text",
-              "title": "La vois (téléphone)",
+              "title": "La voix (téléphone)",
               "label": "on parle de vishing",
               "icon": "phone_call"
             },

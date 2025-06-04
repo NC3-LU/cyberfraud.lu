@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import {} from 'react-icons/fa6'
 import Link from 'next/link'
 
 type FooterProps = {
@@ -11,11 +10,25 @@ export const Footer = ({ siteDescription, patronage }: FooterProps) => {
   return (
     <div className={'bg-content py-16 pt-10 xl:pt-18'}>
       <div className={'section text-white'}>
-        <div className={'text-secondary uppercase mt-8 xl:mt-18 mb-16 text-center xl:text-left'}>
-          <Link href={'/'} className={'font-semibold hover:underline'}>
-            cyberfraud.lu
-          </Link>{' '}
-          {siteDescription}
+        <div className={'flex gap-2 w-full items-start justify-between mb-16'}>
+          <div className={'w-[290px] h-[90px]'}>
+            <Link href='/' className={'w-full h-auto'}>
+              <Image
+                src={'/images/logo.svg'}
+                alt={'Cybersecurity Luxembourg'}
+                width={300}
+                height={95}
+                className={'object-cover w-full h-auto'}
+                priority={true}
+              />
+            </Link>
+          </div>
+          <div className={'uppercase text-center xl:text-left'}>
+            <Link href={'/'} className={'font-semibold hover:underline'}>
+              cyberfraud.lu
+            </Link>{' '}
+            {siteDescription}
+          </div>
         </div>
         <div
           className={
@@ -58,7 +71,7 @@ export const Footer = ({ siteDescription, patronage }: FooterProps) => {
                   href={'https://lhc.lu'}
                   target={'_blank'}
                   rel={'noreferrer noopener'}
-                  className={'text-secondary normal-case hover:underline font-semibold'}
+                  className={'text-white normal-case hover:underline font-semibold'}
                 >
                   lhc.lu
                 </Link>
