@@ -189,12 +189,12 @@
         {
           "icon": "bank",
           "title": "Is it an issue related to your bank?",
-          "body": "Contact your bank’s call centre, your financial advisor or branch’s number during their opening times. If you do not have your branch or advisor's number, a contact number should be on any official document sent by the bank. \n\nIf you do not have access to your branch’s number nor that of your advisor, a contact number must feature on all the official documents sent by your bank. If you cannot find it, use the online yellow pages to get your bank’s official telephone number.\n\n__Out of hours: The phone number +352 491010 to block the Luxtrust certificate linked to your bank account and thus block access to your account.__"
+          "body": "Contact your bank’s call centre, your financial advisor or branch’s number during their opening times. If you do not have your branch or advisor's number, a contact number should be on any official document sent by the bank. \n\nIf you do not have access to your branch’s number nor that of your advisor, a contact number must feature on all the official documents sent by your bank. If you cannot find it, use the online yellow pages to get your bank’s official telephone number.\n\n__Out of hours: The phone number +352 491010 to block the LuxTrust certificate linked to your bank account and thus block access to your account.__"
         },
         {
           "icon": "luxtrust",
           "title": "Is it a fraud related to your LuxTrust account?",
-          "body": "To suspend or revoke their certificate, customers can call LuxTrust’s Customer Care or go to the LuxTrust website - [www.luxtrust.com](https://www.luxtrust.com), in the _My LuxTrust area_, and click on _Temporarily suspend my certificate or Permanently revoke my certificate._\n\nThese procedures can also be carried out in person at our offices in Capellen (IVY Building, 13-15 Parc d'activités, L-8308 Capellen, Luxembourg) from Monday to Friday, 8am to 6pm.\n\n__Ensure you have the answers with you to the security questions you selected during the Luxtrust ID activation process. The operator will need them to identify you.__"
+          "body": "To suspend or revoke their certificate, customers can call LuxTrust’s Customer Care or go to the LuxTrust website - [www.luxtrust.com](https://www.luxtrust.com), in the _My LuxTrust area_, and click on _Temporarily suspend my certificate or Permanently revoke my certificate._\n\nThese procedures can also be carried out in person on LuxTrust's premises in Capellen (IVY Building, 13-15 Parc d'activités, L-8308 Capellen, Luxembourg) from Monday to Friday, 8am to 6pm.\n\n__Ensure you have the answers with you to the security questions you selected during the LuxTrust ID activation process. The operator will need them to identify you.__"
         },
         {
           "icon": "portal",
@@ -249,7 +249,7 @@
         },
         {
           "title": "USE LUXTRUST WHENEVER POSSIBLE",
-          "body": "Use strong authentication mechanisms such as the Luxtrust Mobile app when available."
+          "body": "Use strong authentication mechanisms such as the LuxTrust Mobile app when available."
         }
       ]
     },

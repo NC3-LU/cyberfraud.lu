@@ -151,7 +151,7 @@
           "style": "light",
           "icon": "phone",
           "iconSize": "normal",
-          "title": "AKönnen Sie Ihren Gesprächspartner nicht zurückrufen?",
+          "title": "Können Sie Ihren Gesprächspartner nicht zurückrufen?",
           "body": "Selbst wenn Sie einfach eine Nummer wählen, die Sie schon vor dem Anruf kannten, wie zum Beispiel die Nummer Ihrer Bankfiliale?"
         },
         {
@@ -172,7 +172,7 @@
           "style": "alert",
           "icon": "siren",
           "iconSize": "normal",
-          "title": "Haben Sie auch nur eine dieser Fragen mit, Ja“beantwortet?",
+          "title": "Haben Sie auch nur eine dieser Fragen mit, \"Ja\" beantwortet?",
           "body": "Seien Sie vorsichtig!\nEs besteht akuter Betrugsverdacht!\n"
         }
       ]
@@ -189,12 +189,12 @@
         {
           "icon": "bank",
           "title": "Ein Problem mit Ihrer Bank?",
-          "body": "Wenn Sie die Nummer Ihrer Filiale oder Ihres Beraters nicht zur Hand haben, können Sie die Kontaktdaten sicherlich auf jedem offiziellen Dokument finden, das die Bank Ihnen zugeschickt hat. Wenn Sie keine Nummer finden, nutzen Sie die Gelben Seiten des Online-Telefonbuchs, um die offizielle Nummer der Bank zu erhalten.\n\n__Außerhalb der Geschäftszeiten: Die Telefonnummer +352 491010 können Sie das mit Ihrem Bankkonto verknüpfte Luxtrust-Zertifikat und damit den Zugang zu Ihrem Bankkonto sperren lassen.__"
+          "body": "Wenn Sie die Nummer Ihrer Filiale oder Ihres Beraters nicht zur Hand haben, können Sie die Kontaktdaten sicherlich auf jedem offiziellen Dokument finden, das die Bank Ihnen zugeschickt hat. Wenn Sie keine Nummer finden, nutzen Sie die Gelben Seiten des Online-Telefonbuchs, um die offizielle Nummer der Bank zu erhalten.\n\n__Außerhalb der Geschäftszeiten: Die Telefonnummer +352 491010 können Sie das mit Ihrem Bankkonto verknüpfte LuxTrust-Zertifikat und damit den Zugang zu Ihrem Bankkonto sperren lassen.__"
         },
         {
           "icon": "luxtrust",
           "title": "Betrug im Zusammenhang mit Ihrem LuxTrust-Konto?",
-          "body": "Um sein Zertifikat auszusetzen oder zu widerrufen, kann der Kunde den LuxTrust Customer Care anrufen oder auf der LuxTrust-Website - [www.luxtrust.com](https://www.luxtrust.com) im Bereich _My LuxTrust_ auf _Vorübergehend mein Zertifikat sperren oder Sperren mein Zertifikat_ gehen.\n\nDarüber hinaus können diese Schritte auch persönlich in unseren Räumlichkeiten in Capellen (IVY Building, 13-15 Parc d'activités, L-8308 Capellen, Luxemburg) von Montag bis Freitag von 8:00 bis 18:00 Uhr durchgeführt werden.\n\n__Halten Sie die Antworten auf die Sicherheitsfragen bereit, die Sie bei der Aktivierung Ihrer Luxtrust-ID ausgewählt haben. Diese Antworten werden benötigt, damit der Mitarbeiter Sie am Telefon identifizieren kann.__"
+          "body": "Um sein Zertifikat auszusetzen oder zu widerrufen, kann der Kunde den LuxTrust Customer Care anrufen oder auf der LuxTrust-Website - [www.luxtrust.com](https://www.luxtrust.com) im Bereich _My LuxTrust_ auf _Vorübergehend mein Zertifikat sperren oder Sperren mein Zertifikat_ gehen.\n\nDarüber hinaus können diese Schritte auch persönlich in den Räumlichkeiten von LuxTrust durchgeführt werden in Capellen (IVY Building, 13-15 Parc d'activités, L-8308 Capellen, Luxemburg) von Montag bis Freitag von 8:00 bis 18:00 Uhr durchgeführt werden.\n\n__Halten Sie die Antworten auf die Sicherheitsfragen bereit, die Sie bei der Aktivierung Ihrer LuxTrust-ID ausgewählt haben. Diese Antworten werden benötigt, damit der Mitarbeiter Sie am Telefon identifizieren kann.__"
         },
         {
           "icon": "portal",
@@ -249,7 +249,7 @@
         },
         {
           "title": "NUTZEN SIE LUXTRUST, WENN MÖGLICH",
-          "body": "Verwenden Sie starke Authentifizierungsmechanismen wie die Luxtrust Mobile App, wenn diese verfügbar sind."
+          "body": "Verwenden Sie starke Authentifizierungsmechanismen wie die LuxTrust Mobile App, wenn diese verfügbar sind."
         }
       ]
     },

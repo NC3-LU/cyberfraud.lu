@@ -20,7 +20,7 @@
     ]
   },
   "footer": {
-    "siteDescription": "is the official platform for preventing cyberfraud in Luxembourg.",
+    "siteDescription": "EST LA PLATEFORME OFFICIELLE DE PREVENTION CONTRE LA FRAUDE EN LIGNE.",
     "patronage": "sous le haut patronage du ministère de l’Économie"
   },
   "partners": [
@@ -189,12 +189,12 @@
         {
           "icon": "bank",
           "title": "Un problème lié à votre banque ?",
-          "body": "Si vous ne disposez pas du numéro de votre agence ou de votre conseiller, un numéro de contact devrait se trouver sur tout document officiel envoyé par la banque. Si vous n’en trouvez pas, utilisez les pages jaunes de l’annuaire en ligne pour obtenir le numéro officiel de la banque.\n\n__En dehors des heures d’ouverture : Le « numéro de téléphone +352 491010 » permet de bloquer le certificat Luxtrust associé à votre compte bancaire et donc l’accès au compte.__"
+          "body": "Si vous ne disposez pas du numéro de votre agence ou de votre conseiller, un numéro de contact devrait se trouver sur tout document officiel envoyé par la banque. Si vous n’en trouvez pas, utilisez les pages jaunes de l’annuaire en ligne pour obtenir le numéro officiel de la banque.\n\n__En dehors des heures d’ouverture : Le « numéro de téléphone +352 491010 » permet de bloquer le certificat LuxTrust associé à votre compte bancaire et donc l’accès au compte.__"
         },
         {
           "icon": "luxtrust",
           "title": "Une fraude liée à votre compte LuxTrust ?",
-          "body": "Pour suspendre ou révoquer son certificat, le client peut appeler le Customer Care de LuxTrust ou se rendre sur le site LuxTrust  - [www.luxtrust.com](https://www.luxtrust.com), dans l’espace _My LuxTrust_ sur _Suspendre temporairement mon certificat ou Révoquer définitivement mon certificat_.\n\nPar ailleurs, ces démarches peuvent aussi être effectuées en personne, dans nos locaux à Capellen (IVY Building, 13-15 Parc d’activités, L-8308 Capellen, Luxembourg) du lundi au vendredi, du 8h à 18h.\n\n__Munissez-vous des réponses aux questions de sécurité que vous aviez choisies lors de l’activation de votre identifiant Luxtrust. Ces réponses seront nécessaires pour que l’opérateur soit en mesure de vous identifier.__"
+          "body": "Pour suspendre ou révoquer son certificat, le client peut appeler le Customer Care de LuxTrust ou se rendre sur le site LuxTrust  - [www.luxtrust.com](https://www.luxtrust.com), dans l’espace _My LuxTrust_ sur _Suspendre temporairement mon certificat ou Révoquer définitivement mon certificat_.\n\nPar ailleurs, ces démarches peuvent aussi être effectuées en personne, dans les locaux de LuxTrust à Capellen (IVY Building, 13-15 Parc d’activités, L-8308 Capellen, Luxembourg) du lundi au vendredi, du 8h à 18h.\n\n__Munissez-vous des réponses aux questions de sécurité que vous aviez choisies lors de l’activation de votre identité LuxTrust. Ces réponses seront nécessaires pour que l’opérateur soit en mesure de vous identifier.__"
         },
         {
           "icon": "portal",
@@ -249,7 +249,7 @@
         },
         {
           "title": "UTILISEZ LUXTRUST QUAND C’EST POSSIBLE",
-          "body": "Utilisez les mécanismes d’authentification forte tels que l’application Luxtrust Mobile, lorsqu’ils sont disponibles."
+          "body": "Utilisez les mécanismes d’authentification forte tels que l’application LuxTrust Mobile, lorsqu’ils sont disponibles."
         }
       ]
     },
