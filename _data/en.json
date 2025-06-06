@@ -57,7 +57,7 @@
         [
           {
             "name": "Banque Centrale Du Luxembourg",
-            "image": "/images/bcl.png",
+            "image": "/images/bcl.svg",
             "url": "https://bcl.lu"
           },
           {
@@ -189,7 +189,7 @@
         {
           "icon": "bank",
           "title": "Is it an issue related to your bank?",
-          "body": "Contact your bank’s call centre, your financial advisor or branch’s number during their opening times. If you do not have your branch or advisor's number, a contact number should be on any official document sent by the bank. \n\nIf you do not have access to your branch’s number nor that of your advisor, a contact number must feature on all the official documents sent by your bank. If you cannot find it, use the online yellow pages to get your bank’s official telephone number.\n\n__Out of hours: dial +352 49 10 10 to block the Luxtrust certificate linked to your bank account and thus block access to your account.__"
+          "body": "Contact your bank’s call centre, your financial advisor or branch’s number during their opening times. If you do not have your branch or advisor's number, a contact number should be on any official document sent by the bank. \n\nIf you do not have access to your branch’s number nor that of your advisor, a contact number must feature on all the official documents sent by your bank. If you cannot find it, use the online yellow pages to get your bank’s official telephone number.\n\n__Out of hours: The phone number +352 491010 to block the Luxtrust certificate linked to your bank account and thus block access to your account.__"
         },
         {
           "icon": "luxtrust",

@@ -2,7 +2,7 @@
   "hero": {
     "content": [
       {
-        "title": "Een zweifelhaften Link?",
+        "title": "Een zweifelhafte Link",
         "style": "secondary"
       },
       {
@@ -57,7 +57,7 @@
         [
           {
             "name": "Banque Centrale Du Luxembourg",
-            "image": "/images/bcl.png",
+            "image": "/images/bcl.svg",
             "url": "https://bcl.lu"
           },
           {
@@ -189,7 +189,7 @@
         {
           "icon": "bank",
           "title": "E Problem mat Ärer Bank?",
-          "body": "Während den Ouvertureszäiten kontaktéiert den zentrale Service, äre Beroder oder är Agence.\n\nWann Dir keng direkt Nummer hutt vun ärer Agence oder vun ärem Beroder, eng Kontaktnummer fannt Dir bestemmt op offiziellen Dokumenter vun der Bank. Fannt dir dei Nummer net dann sicht an den gielen Säiten vum Online-Telefonsbuch no der offizieller Telefonsnummer vun der Bank.\n\n__Ausserhalb vun den Ouvertureszäiten: Rufft den 49-10-10 un fir de LuxTrust-Zertifikat ze spären an esou den Zougreff zu ärem Konto ze blokeiren.__"
+          "body": "Während den Ouvertureszäiten kontaktéiert den zentrale Service, äre Beroder oder är Agence.\n\nWann Dir keng direkt Nummer hutt vun ärer Agence oder vun ärem Beroder, eng Kontaktnummer fannt Dir bestemmt op offiziellen Dokumenter vun der Bank. Fannt dir dei Nummer net dann sicht an den gielen Säiten vum Online-Telefonsbuch no der offizieller Telefonsnummer vun der Bank.\n\n__Ausserhalb vun den Ouvertureszäiten: D'Telefonsnummer +352 491010 un fir de LuxTrust-Zertifikat ze spären an esou den Zougreff zu ärem Konto ze blokeiren.__"
         },
         {
           "icon": "luxtrust",

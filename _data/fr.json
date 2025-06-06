@@ -57,7 +57,7 @@
         [
           {
             "name": "Banque Centrale Du Luxembourg",
-            "image": "/images/bcl.png",
+            "image": "/images/bcl.svg",
             "url": "https://bcl.lu"
           },
           {
@@ -189,7 +189,7 @@
         {
           "icon": "bank",
           "title": "Un problème lié à votre banque ?",
-          "body": "Si vous ne disposez pas du numéro de votre agence ou de votre conseiller, un numéro de contact devrait se trouver sur tout document officiel envoyé par la banque. Si vous n’en trouvez pas, utilisez les pages jaunes de l’annuaire en ligne pour obtenir le numéro officiel de la banque.\n\n__En dehors des heures d’ouverture : le 49-10-10 permet de bloquer le certificat Luxtrust associé à votre compte bancaire et donc l’accès au compte.__"
+          "body": "Si vous ne disposez pas du numéro de votre agence ou de votre conseiller, un numéro de contact devrait se trouver sur tout document officiel envoyé par la banque. Si vous n’en trouvez pas, utilisez les pages jaunes de l’annuaire en ligne pour obtenir le numéro officiel de la banque.\n\n__En dehors des heures d’ouverture : Le « numéro de téléphone +352 491010 » permet de bloquer le certificat Luxtrust associé à votre compte bancaire et donc l’accès au compte.__"
         },
         {
           "icon": "luxtrust",

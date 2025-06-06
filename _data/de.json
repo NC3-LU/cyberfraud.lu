@@ -57,7 +57,7 @@
         [
           {
             "name": "Banque Centrale Du Luxembourg",
-            "image": "/images/bcl.png",
+            "image": "/images/bcl.svg",
             "url": "https://bcl.lu"
           },
           {
@@ -189,7 +189,7 @@
         {
           "icon": "bank",
           "title": "Ein Problem mit Ihrer Bank?",
-          "body": "Wenn Sie die Nummer Ihrer Filiale oder Ihres Beraters nicht zur Hand haben, können Sie die Kontaktdaten sicherlich auf jedem offiziellen Dokument finden, das die Bank Ihnen zugeschickt hat. Wenn Sie keine Nummer finden, nutzen Sie die Gelben Seiten des Online-Telefonbuchs, um die offizielle Nummer der Bank zu erhalten.\n\n__Außerhalb der Geschäftszeiten: Unter der Nummer 49-10-10 können Sie das mit Ihrem Bankkonto verknüpfte Luxtrust-Zertifikat und damit den Zugang zu Ihrem Bankkonto sperren lassen.__"
+          "body": "Wenn Sie die Nummer Ihrer Filiale oder Ihres Beraters nicht zur Hand haben, können Sie die Kontaktdaten sicherlich auf jedem offiziellen Dokument finden, das die Bank Ihnen zugeschickt hat. Wenn Sie keine Nummer finden, nutzen Sie die Gelben Seiten des Online-Telefonbuchs, um die offizielle Nummer der Bank zu erhalten.\n\n__Außerhalb der Geschäftszeiten: Die Telefonnummer +352 491010 können Sie das mit Ihrem Bankkonto verknüpfte Luxtrust-Zertifikat und damit den Zugang zu Ihrem Bankkonto sperren lassen.__"
         },
         {
           "icon": "luxtrust",
