@@ -23,6 +23,35 @@
     "siteDescription": "ass déi offiziell Plattform fir d'Preventioun vu Cyberbetrug zu Lëtzebuerg.",
     "patronage": "ënnert der héijer Patronage vum Wirtschaftsministère"
   },
+  "video": {
+    "titles": [
+      {
+        "title": "Léiert déi richteg Reflexer duerch e Lidd!",
+        "style": "secondary-inverse"
+      },
+      {
+        "title": "Kuckt Iech de Museksvideo \"Klick net! Préiwen! Mell et!\" op YouTube un...",
+        "style": "primary"
+      }
+    ],
+    "url": "https://www.youtube.com/watch?v=WJn4TyNqs5A",
+    "embed": "https://www.youtube.com/embed/WJn4TyNqs5A",
+    "linksTitle": "Gitt dem Lidd e Like op alle Museksplattformen.",
+    "links": [
+      {
+        "icon": "youtube",
+        "url": "https://music.youtube.com/watch?v=Ct0UEWc-CM0&si=LuwTl01yxC0jRyQG"
+      },
+      {
+        "icon": "apple",
+        "url": "https://music.apple.com/lu/album/dont-click-single/1816016934?l=fr-FR"
+      },
+      {
+        "icon": "spotify",
+        "url": "https://open.spotify.com/intl-fr/album/2WGEqaRKHcRj2ym4Aa3jTq?si=a91719b8f4ed4119"
+      }
+    ]
+  },
   "partners": [
     {
       "titles": [

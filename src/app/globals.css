@@ -17,6 +17,7 @@
   --color-primary-dark: oklch(0.6667 0.1473 237.8);
   --color-secondary-dark: oklch(0.5771 0.2337 27.61);
   --color-secondary-mid: oklch(0.7311 0.1359 17.02);
+  --color-secondary-mid-2: oklch(0.6016 0.2204 24.63);
   --color-content: oklch(0 0 0);
 }
 
@@ -141,6 +142,16 @@
     );
   }
 
+  .secondary-stripes-dark-2 {
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--color-secondary-dark),
+      var(--color-secondary-dark) 8px,
+      var(--color-secondary-mid-2) 8px,
+      var(--color-secondary-mid-2) 16px
+    );
+  }
+
   .secondary-stripes-transparent {
     background: repeating-linear-gradient(
       -45deg,
@@ -157,6 +168,10 @@
 
   .secondary {
     @apply bg-secondary text-white;
+  }
+
+  .secondary-inverse {
+    @apply bg-white text-secondary;
   }
 
   .card {

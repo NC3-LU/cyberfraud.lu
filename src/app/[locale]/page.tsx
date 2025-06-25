@@ -1,13 +1,16 @@
-import { Layout } from '@/components/Layout'
-import type { Locale } from '@/types'
-import { Hero } from '@/components/Hero'
-import { Title } from '@/components/Title'
-import { Card } from '@/components/Card'
-import { getHtmlFromMD, getTranslations } from '@/content/translations'
+import VideoImage from '@/assets/video_image.png'
 import { Accordion } from '@/components/Accordion'
+import { Card } from '@/components/Card'
+import { Hero } from '@/components/Hero'
+import { Icon } from '@/components/Icon'
+import { LEssentielPopup } from '@/components/LEssentielPopup'
+import { Layout } from '@/components/Layout'
+import { Title } from '@/components/Title'
+import { getHtmlFromMD, getTranslations } from '@/content/translations'
+import type { Locale } from '@/types'
 import Image from 'next/image'
 import Link from 'next/link'
-import { LEssentielPopup } from '@/components/LEssentielPopup'
+import { YouTubeVideo } from '@/components/YouTubeVideo'
 
 export default async function Home({
   params,
@@ -38,6 +41,7 @@ export default async function Home({
   const section4 = translations.sections[3]
   const section5 = translations.sections[4]
   const [partners1, partners2] = translations.partners
+  const video = translations.video
 
   return (
     <>
@@ -192,6 +196,35 @@ export default async function Home({
                     />
                   )
                 })}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={'page-container'}>
+          <div className={'secondary-stripes-dark-2 py-24'}>
+            <div className={'section '}>
+              <Title level={'h2'} title={video.titles} />
+            </div>
+            <div className={'section py-16'}>
+              <YouTubeVideo videoUrl={video.url} embedUrl={video.embed} image={VideoImage} />
+            </div>
+            <div className={'section'}>
+              <div
+                className={
+                  '[clip-path:polygon(0_0,100%_0,100%_70%,95%_100%,0_100%)] bg-white flex flex-col lg:flex-row items-center justify-start gap-16 p-8 text-secondary'
+                }
+              >
+                <div className={'uppercase  text-2xl font-secondary'}>{video.linksTitle}</div>
+                <div className={'flex justify-start items-center gap-4'}>
+                  {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+                  {video.links.map((link: any) => {
+                    return (
+                      <Link key={link.url} href={link.url} target={'_blank'} rel='noopener noreferrer'>
+                        <Icon name={link.icon} className={'text-5xl'} />
+                      </Link>
+                    )
+                  })}
+                </div>
               </div>
             </div>
           </div>

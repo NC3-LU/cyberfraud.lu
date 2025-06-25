@@ -23,6 +23,35 @@
     "siteDescription": "ist die offizielle Plattform zur Cyberbetrugsprävention in Luxemburg.",
     "patronage": "unter der Schirmherrschaft des Wirtschaftsministeriums"
   },
+  "video": {
+    "titles": [
+      {
+        "title": "Lernen Sie die richtigen Reflexe in einem Lied!",
+        "style": "secondary-inverse"
+      },
+      {
+        "title": "Sehen Sie sich den Videoclip „Klick nicht! Überprüfe! Melde!“ auf YouTube an...",
+        "style": "primary"
+      }
+    ],
+    "url": "https://www.youtube.com/watch?v=WJn4TyNqs5A",
+    "embed": "https://www.youtube.com/embed/WJn4TyNqs5A",
+    "linksTitle": "Liken Sie die Musik auf allen Musikplattformen.",
+    "links": [
+      {
+        "icon": "youtube",
+        "url": "https://music.youtube.com/watch?v=Ct0UEWc-CM0&si=LuwTl01yxC0jRyQG"
+      },
+      {
+        "icon": "apple",
+        "url": "https://music.apple.com/lu/album/dont-click-single/1816016934?l=fr-FR"
+      },
+      {
+        "icon": "spotify",
+        "url": "https://open.spotify.com/intl-fr/album/2WGEqaRKHcRj2ym4Aa3jTq?si=a91719b8f4ed4119"
+      }
+    ]
+  },
   "partners": [
     {
       "titles": [
