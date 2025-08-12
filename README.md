@@ -85,6 +85,7 @@ installed.
 1. Create a folder. Example: `mkdir cyberfraud-lu-website && cd cyberfraud-lu-website`.
 
 2. Copy the content of _data in a specific folder folder: `mkdir data && cp _data/*.json ./data`
+   (remote copy: `scp _data/*.json [user]@[server]:/var/www/cyberfraud-lu/data`)
 
 3. Create a `.env` file with the following variables:
     ```dotenv
