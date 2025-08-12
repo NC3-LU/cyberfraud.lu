@@ -10,7 +10,7 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Cyberfraud.lu',
-  description: 'Cybersecurity Luxembourg',
+  description: 'CyberFraud.lu - Luxembourg',
 }
 
 const fjalla = Fjalla_One({ subsets: ['latin'], weight: '400', variable: '--font-fjalla' })

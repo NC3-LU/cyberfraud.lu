@@ -114,7 +114,7 @@ export default async function Home({
         <div className={'page-container'}>
           <div
             className={
-              "w-full h-full flex flex-col items-start justify-start py-16 xl:py-40 bg-[url('/images/bg4_mobile.png')] md:bg-[url('/images/bg4.png')] bg-position-[top_center] lg:bg-cover  bg-auto bg-no-repeat"
+              "w-full h-full flex flex-col items-start justify-start py-16 xl:py-40 bg-[url('/images/bg4_mobile.png')] md:bg-[url('/images/bg4.png')] bg-position-[top_center] bg-cover bg-no-repeat"
             }
           >
             <div className={'section pb-16 xl:pb-24'}>
@@ -131,7 +131,7 @@ export default async function Home({
                         index
                       }`}
                       className={
-                        'w-full flex items-start xl:items-stretch justify-center h-auto xl:h-[180px] bg-transparent xl:bg-white'
+                        'w-full flex items-stretch justify-center h-auto xl:h-[180px] bg-transparent xl:bg-white'
                       }
                     >
                       <div
