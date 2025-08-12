@@ -114,7 +114,7 @@ export default async function Home({
         <div className={'page-container'}>
           <div
             className={
-              "w-full h-full flex flex-col items-start justify-start py-16 xl:py-40 bg-[url('/images/bg4_mobile.png')] md:bg-[url('/images/bg4.png')] bg-position-[top_center] lg:bg-cover  bg-auto bg-no-repeat"
+              "w-full h-full flex flex-col items-start justify-start py-16 xl:py-40 bg-[url('/images/bg4_mobile.png')] md:bg-[url('/images/bg4.png')] bg-position-[top_center] bg-cover bg-no-repeat"
             }
           >
             <div className={'section pb-16 xl:pb-24'}>
@@ -131,7 +131,7 @@ export default async function Home({
                         index
                       }`}
                       className={
-                        'w-full flex items-start xl:items-stretch justify-center h-auto xl:h-[180px] bg-transparent xl:bg-white'
+                        'w-full flex items-stretch justify-center h-auto xl:h-[180px] bg-transparent xl:bg-white'
                       }
                     >
                       <div
@@ -239,6 +239,7 @@ export default async function Home({
                 'my-8 xl:my-16 grid grid-cols-2 xl:grid-cols-4 gap-16 xl:gap-8 w-full auto-rows-[60px] xl:auto-rows-[80px]'
               }
             >
+              {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
               {partners1.items[0].map((item: any) => {
                 return (
                   <div key={`partners1_item_${item.name}`} className={'flex  justify-center items-center m-auto'}>
@@ -254,6 +255,7 @@ export default async function Home({
                 'grid grid-cols-3 xl:grid-cols-5 gap-16 lg:gap-8 xl:gap-2 w-full my-8 xl:my-16 items-center auto-rows-[60px] xl:auto-rows-[80px] justify-center'
               }
             >
+              {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
               {partners1.items[1].map((item: any) => {
                 return (
                   <Link
@@ -287,6 +289,7 @@ export default async function Home({
                   'my-8 xl:my-16 grid grid-cols-2 lg:grid-cols-[30px_1fr_30px_1fr_30px] xl:grid-cols-[50px_1fr_150px_1fr_50px] gap-16 w-full justify-center items-center auto-rows-[50px] xl:auto-rows-[80px]'
                 }
               >
+                {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
                 {partners2.items[0].map((item: any, index: number) => {
                   return (
                     <div
@@ -310,6 +313,7 @@ export default async function Home({
                   'grid grid-cols-3 xl:grid-cols-5 gap-16 xl:gap-8 w-full justify-center my-8 xl:my-16 flex-wrap auto-rows-[40px] xl:auto-rows-[50px]'
                 }
               >
+                {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
                 {partners2.items[1].map((item: any) => {
                   return (
                     <Link
