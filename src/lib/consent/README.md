@@ -25,14 +25,15 @@ export { CookiebotProvider as CookieConsentProvider } from './providers/cookiebo
 ```tsx 
 // src/app/layout.tsx
 
+import Head from 'next/head'
 import { CookieConsentProvider } from '@/lib/consent'
 
 export default function RootLayout({ children }) {
   return (
     <html>
-    <head>
+    <Head>
       <CookieConsentProvider />
-    </head>
+    </Head>
     <body>{children}</body>
     </html>
   )
