@@ -14,7 +14,8 @@
     "format": "biome format --write src",
     "lint": "biome lint src",
     "check": "biome check ./src",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "test": "jest"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -32,11 +33,18 @@
     "@headlessui/react": "^2.2.7",
     "@headlessui/tailwindcss": "^0.2.2",
     "@tailwindcss/postcss": "^4.1.11",
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20.19.10",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
+    "jest": "^30.0.5",
+    "jest-environment-jsdom": "^30.0.5",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
   "pnpm": {
@@ -44,7 +52,11 @@
       "@biomejs/biome",
       "@parcel/watcher",
       "@tailwindcss/oxide",
-      "sharp"
+      "sharp",
+      "unrs-resolver"
+    ],
+    "ignoredBuiltDependencies": [
+      "unrs-resolver"
     ]
   }
 }
