@@ -18,11 +18,13 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "test:clean": "rm -rf ./tests/unit/coverage",
     "test:ci": "jest --ci --coverage",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:headed": "playwright test --headed",
-    "test:e2e:ci": "playwright test"
+    "test:e2e:ci": "playwright test",
+    "test:e2e:clean": "rm -rf ./tests/e2e/test-results ./tests/e2e/playwright-report"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
