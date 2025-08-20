@@ -45,6 +45,9 @@ next-env.d.ts
 .idea
 .vscode
 
+# Jest
+/tests/unit/coverage
+
 # Playwright
 node_modules/
 **/test-results/
