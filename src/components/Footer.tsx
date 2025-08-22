@@ -80,7 +80,19 @@ export const Footer = ({ siteDescription, patronage }: FooterProps) => {
           </div>
         </div>
 
-        <div className={'text-base mx-auto xl:mx-0'}>Terms of Service & Privacy Policy</div>
+        <div className={'justify-center mx-auto flex text-base xl:mx-0'}>
+          <div>
+            <Link href={'/terms-and-conditions'} className={'hover:underline'}>
+              Terms and Conditions
+            </Link>
+          </div>
+          <div className={'mx-2 text-gray-400'}>|</div>
+          <div>
+            <Link href={'/privacy-policy'} className={'hover:underline'}>
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )
