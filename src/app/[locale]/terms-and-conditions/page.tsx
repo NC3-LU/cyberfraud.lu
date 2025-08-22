@@ -12,7 +12,7 @@ export default async function TermsAndConditionsPage({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
   const { locale } = await params
-  const translations = await getTranslations('en') // getTranslation(locale as Locale) once we have non-En translations
+  const translations = await getTranslations(locale as Locale)
   const body = (await translations['terms-and-conditions']?.content) || ''
   const linkRightTitle = (await translations['privacy-policy']?.title) || 'Privacy policy'
 
