@@ -2,7 +2,6 @@
 
 import MarkdownDefault, { type Components } from 'react-markdown'
 import Link from 'next/link'
-import { twMerge } from 'tailwind-merge'
 import rehypeSlug from 'rehype-slug';
 
 /**
@@ -27,9 +26,11 @@ export const Markdown = ({ className, children }: MarkdownProps) => {
     ol: ({ children }) => <ol className={'list-decimal pl-6'}>{children}</ol>,
     ul: ({ children }) => <ul className={'list-disc pl-6'}>{children}</ul>,
     a: ({ href, children, ...props }) => {
-      const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'))
+      if (!href) {
+        return children
+      }
 
-      if (!href) return children
+      const isInternalLink = href.startsWith('/') || href.startsWith('#')
 
       if (isInternalLink) {
         return (
@@ -54,7 +55,7 @@ export const Markdown = ({ className, children }: MarkdownProps) => {
   }
 
   return (
-    <div className={twMerge('', className)}>
+    <div className={className}>
       <MarkdownDefault rehypePlugins={[rehypeSlug]} components={components}>{children}</MarkdownDefault>
     </div>
   )
