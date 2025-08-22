@@ -12,7 +12,7 @@ export default async function PrivacyPolicyPage({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
   const { locale } = await params
-  const translations = await getTranslations(locale as Locale)
+  const translations = await getTranslations('en') // getTranslation(locale as Locale) once we have non-En translations
   const body = (await translations['privacy-policy']?.content) || ''
   const linkRightTitle = (await translations['terms-and-conditions']?.title) || 'Terms and conditions'
 
