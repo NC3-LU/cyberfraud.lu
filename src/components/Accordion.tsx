@@ -1,7 +1,6 @@
 'use client'
 
-import { Disclosure, DisclosureButton, DisclosurePanel, CloseButton } from '@headlessui/react'
-import {} from 'react-icons/fa6'
+import { CloseButton, Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { LuCircleMinus, LuCirclePlus } from 'react-icons/lu'
 import { Icon } from '@/components/Icon'
 
@@ -32,7 +31,7 @@ export const Accordion = ({ title, body, icon }: AccordionProps) => {
             </DisclosureButton>
 
             <DisclosurePanel transition={true} className='accordion-body'>
-              {/* biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation> */}
+              {/* biome-ignore lint/security/noDangerouslySetInnerHtml: fine here */}
               <div dangerouslySetInnerHTML={{ __html: body }} />
             </DisclosurePanel>
           </div>

@@ -16,7 +16,11 @@ export const TitleItem = ({
   title,
   style = 'primary',
   className = '',
-}: { title: string; style?: string; className?: string }) => {
+}: {
+  title: string
+  style?: string
+  className?: string
+}) => {
   return <span className={`${style} inline-block p-2 px-3 max-w-max ${className}`}>{title}</span>
 }
 

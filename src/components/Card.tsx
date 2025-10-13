@@ -42,9 +42,7 @@ export const Card = ({
     <div className={'relative'}>
       {style === 'dark' ? (
         <div className='absolute inset-0 bg-white/80 [clip-path:polygon(0_0,100%_0,100%_90%,85%_100%,0_100%)]' />
-      ) : (
-        <></>
-      )}
+      ) : undefined}
       <div className={`card ${style} ${className}`}>
         {icon ? (
           <div className={'card-icon'}>
@@ -54,9 +52,7 @@ export const Card = ({
               containerClassName={`${style === 'dark' ? 'w-[65px]' : ''}`}
             />
           </div>
-        ) : (
-          <></>
-        )}
+        ) : undefined}
         <div className={'card-body'}>
           <div className={'card-title'}>{title}</div>
           {body ? (
@@ -64,7 +60,7 @@ export const Card = ({
               body.map((b, i) => (
                 <p
                   key={`card_${title}_body_${
-                    // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                    // biome-ignore lint/suspicious/noArrayIndexKey: it's fine here
                     i
                   }`}
                 >
@@ -74,9 +70,7 @@ export const Card = ({
             ) : (
               <p>{body}</p>
             )
-          ) : (
-            <></>
-          )}
+          ) : undefined}
           {footerItems ? (
             <div className={'card-footer'}>
               {footerItems.map((item) => {
@@ -103,9 +97,7 @@ export const Card = ({
                 )
               })}
             </div>
-          ) : (
-            <></>
-          )}
+          ) : undefined}
         </div>
       </div>
     </div>

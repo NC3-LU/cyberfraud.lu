@@ -1,12 +1,12 @@
-import type React from 'react'
+import type { Metadata } from 'next'
 import { Fjalla_One, Roboto } from 'next/font/google'
 import { headers } from 'next/headers'
-import type { Metadata } from 'next'
+import type React from 'react'
 import './globals.css'
-import i18nConfig from '@/i18nConfig'
 import { notFound } from 'next/navigation'
-import type { Locale } from '@/types'
 import Script from 'next/script'
+import i18nConfig from '@/i18nConfig'
+import type { Locale } from '@/types'
 
 export const metadata: Metadata = {
   title: 'Cyberfraud.lu',
@@ -76,9 +76,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             `}
             </Script>
           </>
-        ) : (
-          <></>
-        )}
+        ) : undefined}
         {children}
       </body>
     </html>

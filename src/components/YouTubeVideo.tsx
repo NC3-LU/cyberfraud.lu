@@ -1,9 +1,9 @@
 'use client'
 
-import React from 'react'
-import Link from 'next/link'
+import type { StaticImport, StaticRequire } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
-import type { StaticRequire, StaticImport } from 'next/dist/shared/lib/get-img-props'
+import Link from 'next/link'
+import React from 'react'
 
 type YouTubeVideoProps = {
   videoUrl: string
@@ -28,16 +28,14 @@ export const YouTubeVideo = ({ videoUrl, embedUrl, image, hasConsent = false }: 
       {!isEmbedded ? (
         <Image src={image} alt={'YouTubeVideo'} className={'cursor-pointer'} onClick={() => setIsEmbedded(true)} />
       ) : (
-        <>
-          <iframe
-            src={embedUrl}
-            title='YouTube video player'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            referrerPolicy='strict-origin-when-cross-origin'
-            allowFullScreen
-            className={'w-full h-auto aspect-video'}
-          />
-        </>
+        <iframe
+          src={embedUrl}
+          title='YouTube video player'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerPolicy='strict-origin-when-cross-origin'
+          allowFullScreen
+          className={'w-full h-auto aspect-video'}
+        />
       )}
     </>
   )

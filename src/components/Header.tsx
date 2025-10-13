@@ -1,8 +1,8 @@
-import { LanguageSwitcher } from '@/components/LanguageSwitcher'
-import type { WithLocale } from '@/types'
 import Image from 'next/image'
 import Link from 'next/link'
 import type React from 'react'
+import { LanguageSwitcher } from '@/components/LanguageSwitcher'
+import type { WithLocale } from '@/types'
 
 type HeaderProps = WithLocale<{ additionalLogo?: React.ReactNode }>
 
@@ -27,9 +27,7 @@ export const Header = ({ currentLocale, additionalLogo }: HeaderProps) => {
             <div className={'text-3xl font-primary font-light px-0 pl-14'}>X</div>
             <div className={'w-[190px] lg:w-[300px] m-0 p-0'}>{additionalLogo}</div>
           </>
-        ) : (
-          <></>
-        )}
+        ) : undefined}
       </div>
 
       <div>

@@ -1,21 +1,24 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import VideoImage from '@/assets/video_image.png'
 import { Accordion } from '@/components/Accordion'
 import { Card } from '@/components/Card'
 import { Hero } from '@/components/Hero'
 import { Icon } from '@/components/Icon'
-import { LEssentielPopup } from '@/components/LEssentielPopup'
 import { Layout } from '@/components/Layout'
+import { LEssentielPopup } from '@/components/LEssentielPopup'
 import { Title } from '@/components/Title'
+import { YouTubeVideo } from '@/components/YouTubeVideo'
 import { getHtmlFromMD, getTranslations } from '@/content/translations'
 import type { Locale } from '@/types'
-import Image from 'next/image'
-import Link from 'next/link'
-import { YouTubeVideo } from '@/components/YouTubeVideo'
 
 export default async function Home({
   params,
   searchParams,
-}: { params: Promise<{ locale: Locale }>; searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
+}: {
+  params: Promise<{ locale: Locale }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
   const { locale } = await params
   const { campaign = undefined } = await searchParams
   const translations = await getTranslations(locale)
@@ -62,12 +65,12 @@ export default async function Home({
               <div
                 className={'grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-2 auto-rows-fr pb-8 xl:pb-0'}
               >
-                {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+                {/* biome-ignore lint/suspicious/noExplicitAny: we need it */}
                 {section1.cards.map((card: any, index: number) => {
                   return (
                     <Card
                       key={`section1_card_${
-                        // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                        // biome-ignore lint/suspicious/noArrayIndexKey: it's fine
                         index
                       }`}
                       title={card.title}
@@ -91,12 +94,12 @@ export default async function Home({
               <div className={'flex flex-col gap-4'}>
                 {
                   await Promise.all(
-                    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+                    // biome-ignore lint/suspicious/noExplicitAny: we need it
                     section2.accordionItems.map(async (item: any, index: number) => {
                       return (
                         <Accordion
                           key={`section2_accordion_${
-                            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                            // biome-ignore lint/suspicious/noArrayIndexKey: it's fine
                             index
                           }`}
                           title={item.title}
@@ -122,12 +125,12 @@ export default async function Home({
             </div>
             <div className={'section pt-4 pb-16'}>
               <div className={'flex flex-col items-center justify-center w-full gap-4'}>
-                {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+                {/* biome-ignore lint/suspicious/noExplicitAny: we need it */}
                 {section3.cards.map((item: any, index: number) => {
                   return (
                     <div
                       key={`horizontal_card_${
-                        // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                        // biome-ignore lint/suspicious/noArrayIndexKey: it's fine
                         index
                       }`}
                       className={
@@ -156,14 +159,14 @@ export default async function Home({
               </div>
               <div className={'section mt-8 xl:mt-16 overflow-x-auto'}>
                 <div className={'grid grid-cols-4 gap-4 w-[max-content] xl:w-full'}>
-                  {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+                  {/* biome-ignore lint/suspicious/noExplicitAny: we need it */}
                   {section4.cards.map((card: any, index: number) => {
                     return (
                       <Card
                         className={'max-w-[300px] xl:max-w-none'}
                         style={card.style}
                         key={`section4_card_${
-                          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                          // biome-ignore lint/suspicious/noArrayIndexKey: it's fine
                           index
                         }`}
                         title={card.title}
@@ -180,12 +183,12 @@ export default async function Home({
             </div>
             <div className={'section mt-0 xl:mt-16'}>
               <div className={'grid grid-cols-1 xl:grid-cols-3 gap-4 items-start'}>
-                {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+                {/* biome-ignore lint/suspicious/noExplicitAny: we need it */}
                 {section5.cards.map((card: any, index: number) => {
                   return (
                     <Card
                       key={`section5_card_${
-                        // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                        // biome-ignore lint/suspicious/noArrayIndexKey: it's fine
                         index
                       }`}
                       icon={card.icon}
@@ -216,7 +219,7 @@ export default async function Home({
               >
                 <div className={'uppercase  text-2xl font-secondary'}>{video.linksTitle}</div>
                 <div className={'flex justify-start items-center gap-4'}>
-                  {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+                  {/* biome-ignore lint/suspicious/noExplicitAny: we need it */}
                   {video.links.map((link: any) => {
                     return (
                       <Link key={link.url} href={link.url} target={'_blank'} rel='noopener noreferrer'>
@@ -239,7 +242,7 @@ export default async function Home({
                 'my-8 xl:my-16 grid grid-cols-2 xl:grid-cols-4 gap-16 xl:gap-8 w-full auto-rows-[60px] xl:auto-rows-[80px]'
               }
             >
-              {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+              {/* biome-ignore lint/suspicious/noExplicitAny: we should use it here */}
               {partners1.items[0].map((item: any) => {
                 return (
                   <div key={`partners1_item_${item.name}`} className={'flex  justify-center items-center m-auto'}>
@@ -255,7 +258,7 @@ export default async function Home({
                 'grid grid-cols-3 xl:grid-cols-6 gap-16 lg:gap-8 xl:gap-2 w-full my-8 xl:my-16 items-center auto-rows-[60px] xl:auto-rows-[80px] justify-center'
               }
             >
-              {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+              {/* biome-ignore lint/suspicious/noExplicitAny: same as line 245 */}
               {partners1.items[1].map((item: any) => {
                 return (
                   <Link
@@ -289,7 +292,7 @@ export default async function Home({
                   'my-8 xl:my-16 grid grid-cols-2 lg:grid-cols-[30px_1fr_30px_1fr_30px] xl:grid-cols-[50px_1fr_150px_1fr_50px] gap-16 w-full justify-center items-center auto-rows-[50px] xl:auto-rows-[80px]'
                 }
               >
-                {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+                {/* biome-ignore lint/suspicious/noExplicitAny: still need any */}
                 {partners2.items[0].map((item: any, index: number) => {
                   return (
                     <div
@@ -313,7 +316,7 @@ export default async function Home({
                   'grid grid-cols-3 xl:grid-cols-5 gap-16 xl:gap-8 w-full justify-center my-8 xl:my-16 flex-wrap auto-rows-[40px] xl:auto-rows-[50px]'
                 }
               >
-                {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
+                {/* biome-ignore lint/suspicious/noExplicitAny: we need it */}
                 {partners2.items[1].map((item: any) => {
                   return (
                     <Link

@@ -1,4 +1,4 @@
-import { FaYoutube, FaSpotify, FaApple } from 'react-icons/fa6'
+import { FaApple, FaSpotify, FaYoutube } from 'react-icons/fa6'
 
 type IconProps = {
   name: string
@@ -153,7 +153,7 @@ const getIcon = (name: string, className = '') => {
       return <FaApple className={className} />
 
     default:
-      return <></>
+      return undefined
   }
 }
 /**

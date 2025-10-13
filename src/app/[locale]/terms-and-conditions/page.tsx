@@ -24,7 +24,9 @@ export default async function TermsAndConditionsPage({
     >
       <div className={'page-container'}>
         <div className={'section primary-stripes mb-10 flex flex-col items-center justify-center py-14'}>
-          <div className={'flex flex-col justify-between min-h-[calc(100vh-220px)] max-w-[min(1000px, 100vw)] bg-white'}>
+          <div
+            className={'flex flex-col justify-between min-h-[calc(100vh-220px)] max-w-[min(1000px, 100vw)] bg-white'}
+          >
             <div className={'flex h-[60px] items-center justify-between px-6 pt-4'}>
               <Link
                 href={'/'}
