@@ -252,7 +252,7 @@ export default async function Home({
             </div>
             <div
               className={
-                'grid grid-cols-3 xl:grid-cols-5 gap-16 lg:gap-8 xl:gap-2 w-full my-8 xl:my-16 items-center auto-rows-[60px] xl:auto-rows-[80px] justify-center'
+                'grid grid-cols-3 xl:grid-cols-6 gap-16 lg:gap-8 xl:gap-2 w-full my-8 xl:my-16 items-center auto-rows-[60px] xl:auto-rows-[80px] justify-center'
               }
             >
               {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}

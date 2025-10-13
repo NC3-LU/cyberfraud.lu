@@ -108,6 +108,11 @@
             "name": "My Connectivity",
             "image": "/images/myconnectivity.png",
             "url": "https://myconnectivity.lu"
+          },
+          {
+            "name": "Ministére de l'Agriculture, de l'Alimentation et de la Viticulture",
+            "image": "/images/gouv_ma.jpg",
+            "url": "https://ma.gouvernement.lu/lb.html"
           }
         ]
       ]
